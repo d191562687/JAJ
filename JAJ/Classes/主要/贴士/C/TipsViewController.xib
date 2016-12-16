@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TipsViewController">
+            <connections>
+                <outlet property="tableView" destination="O63-bb-dJU" id="3Ii-H0-t5x"/>
+                <outlet property="tipsType" destination="joN-Ir-qTD" id="Wdz-KB-ERt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="joN-Ir-qTD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="29"/>
+                    <segments>
+                        <segment title="业务动态"/>
+                        <segment title="政策法规"/>
+                        <segment title="用药安全"/>
+                        <segment title="日常保健"/>
+                    </segments>
+                    <connections>
+                        <action selector="tips:" destination="-1" eventType="valueChanged" id="FSS-v0-1Iu"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O63-bb-dJU">
+                    <rect key="frame" x="0.0" y="29" width="375" height="638"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2CM-Kf-wjY"/>
+                        <outlet property="delegate" destination="-1" id="3XJ-J7-Zdn"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="joN-Ir-qTD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9bd-kj-UYD"/>
+                <constraint firstItem="joN-Ir-qTD" firstAttribute="leading" secondItem="O63-bb-dJU" secondAttribute="leading" id="Hom-RH-iAX"/>
+                <constraint firstAttribute="trailing" secondItem="joN-Ir-qTD" secondAttribute="trailing" id="SNF-J2-13T"/>
+                <constraint firstItem="O63-bb-dJU" firstAttribute="top" secondItem="joN-Ir-qTD" secondAttribute="bottom" constant="1" id="erV-YW-r9A"/>
+                <constraint firstAttribute="bottom" secondItem="O63-bb-dJU" secondAttribute="bottom" id="hZ5-7h-OTI"/>
+                <constraint firstItem="joN-Ir-qTD" firstAttribute="trailing" secondItem="O63-bb-dJU" secondAttribute="trailing" id="oTY-Dl-TmI"/>
+                <constraint firstItem="joN-Ir-qTD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zge-lb-2hS"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="70.5"/>
+        </view>
+    </objects>
+</document>

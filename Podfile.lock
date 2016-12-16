@@ -1,0 +1,79 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AMap3DMap (4.2.1):
+    - AMapFoundation (~> 1.2)
+  - AMapFoundation (1.2.0)
+  - AMapLocation (2.1.1):
+    - AMapFoundation (~> 1.2)
+  - AMapNavi (2.2.1):
+    - AMap3DMap (~> 4.2)
+    - AMapFoundation (~> 1.2)
+  - AMapSearch (4.2.0):
+    - AMapFoundation (~> 1.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - IQKeyboardManager (4.0.6)
+  - LCActionSheet (2.5.1):
+    - Masonry (~> 1.0.1)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AMap3DMap
+  - AMapLocation
+  - AMapNavi
+  - AMapSearch
+  - FMDB
+  - IQKeyboardManager
+  - LCActionSheet
+  - Masonry
+  - MBProgressHUD
+  - MJExtension (~> 3.0.10)
+  - MJRefresh
+  - SDWebImage (~> 3.8.1)
+  - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AMap3DMap: 0a5237cdc228f49818763ce9707c997870c5eb01
+  AMapFoundation: 8acc2bf4eed79aab4d21002ddb8b24a6f3f3621c
+  AMapLocation: dd203f76b034ef5cb546600f4e1ffad2a3a14072
+  AMapNavi: 9c4d741ce39b98fe255fd57b51452d7d9de5e263
+  AMapSearch: 788020fca7ed18819e8bc2bfca716a6775a05ada
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  IQKeyboardManager: c52debb1967799ae7addb98eab0cf328083a874f
+  LCActionSheet: 8f0d344225461d686adf6719820d43b2062a53f3
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 3df9050b1dd23ee0dd24b31ce74b92b7fc0b9dd3
+
+COCOAPODS: 1.0.1
