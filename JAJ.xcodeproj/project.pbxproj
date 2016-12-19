@@ -63,8 +63,6 @@
 		F1A634AC1DF94D6300CA6BBE /* EditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A634AA1DF94D6300CA6BBE /* EditionViewController.xib */; };
 		F1A634B01DF94D8600CA6BBE /* JAJSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A634AE1DF94D8600CA6BBE /* JAJSetViewController.m */; };
 		F1A634B11DF94D8600CA6BBE /* JAJSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A634AF1DF94D8600CA6BBE /* JAJSetViewController.xib */; };
-		F1A634B51DF94DC400CA6BBE /* ChangePassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A634B31DF94DC400CA6BBE /* ChangePassWordViewController.m */; };
-		F1A634B61DF94DC400CA6BBE /* ChangePassWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A634B41DF94DC400CA6BBE /* ChangePassWordViewController.xib */; };
 		F1A9F6811DF793DE00F211AF /* TipsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A9F6801DF793DE00F211AF /* TipsModel.m */; };
 		F1A9F6841DF7960F00F211AF /* TipsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A9F6831DF7960F00F211AF /* TipsTableViewCell.m */; };
 		F1AE57231DF641EF007515F3 /* BackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE57211DF641EF007515F3 /* BackViewController.m */; };
@@ -105,6 +103,8 @@
 		F1BF5BB11DEAC9DE006AA3BA /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF5BA71DEAC9DE006AA3BA /* SDCollectionViewCell.m */; };
 		F1BF5BB21DEAC9DE006AA3BA /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF5BA91DEAC9DE006AA3BA /* SDCycleScrollView.m */; };
 		F1BF5BB31DEAC9DE006AA3BA /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF5BAB1DEAC9DE006AA3BA /* UIView+SDExtension.m */; };
+		F1D18FBB1E07B3360032A028 /* ChangePassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D18FB91E07B3360032A028 /* ChangePassWordViewController.m */; };
+		F1D18FBC1E07B3360032A028 /* ChangePassWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D18FBA1E07B3360032A028 /* ChangePassWordViewController.xib */; };
 		F1DA22871DF00B8C00743904 /* ActIssueSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DA22851DF00B8C00743904 /* ActIssueSearchTableViewCell.m */; };
 		F1DA22881DF00B8C00743904 /* ActIssueSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DA22861DF00B8C00743904 /* ActIssueSearchTableViewCell.xib */; };
 		F1DA228B1DF0119E00743904 /* ActIssueSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DA228A1DF0119E00743904 /* ActIssueSearchModel.m */; };
@@ -240,9 +240,6 @@
 		F1A634AD1DF94D8600CA6BBE /* JAJSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAJSetViewController.h; sourceTree = "<group>"; };
 		F1A634AE1DF94D8600CA6BBE /* JAJSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAJSetViewController.m; sourceTree = "<group>"; };
 		F1A634AF1DF94D8600CA6BBE /* JAJSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JAJSetViewController.xib; sourceTree = "<group>"; };
-		F1A634B21DF94DC400CA6BBE /* ChangePassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassWordViewController.h; sourceTree = "<group>"; };
-		F1A634B31DF94DC400CA6BBE /* ChangePassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordViewController.m; sourceTree = "<group>"; };
-		F1A634B41DF94DC400CA6BBE /* ChangePassWordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePassWordViewController.xib; sourceTree = "<group>"; };
 		F1A9F67F1DF793DE00F211AF /* TipsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsModel.h; sourceTree = "<group>"; };
 		F1A9F6801DF793DE00F211AF /* TipsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsModel.m; sourceTree = "<group>"; };
 		F1A9F6821DF7960F00F211AF /* TipsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsTableViewCell.h; sourceTree = "<group>"; };
@@ -323,6 +320,9 @@
 		F1BF5BA91DEAC9DE006AA3BA /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		F1BF5BAA1DEAC9DE006AA3BA /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		F1BF5BAB1DEAC9DE006AA3BA /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		F1D18FB81E07B3360032A028 /* ChangePassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassWordViewController.h; sourceTree = "<group>"; };
+		F1D18FB91E07B3360032A028 /* ChangePassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordViewController.m; sourceTree = "<group>"; };
+		F1D18FBA1E07B3360032A028 /* ChangePassWordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePassWordViewController.xib; sourceTree = "<group>"; };
 		F1DA22841DF00B8C00743904 /* ActIssueSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActIssueSearchTableViewCell.h; sourceTree = "<group>"; };
 		F1DA22851DF00B8C00743904 /* ActIssueSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActIssueSearchTableViewCell.m; sourceTree = "<group>"; };
 		F1DA22861DF00B8C00743904 /* ActIssueSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActIssueSearchTableViewCell.xib; sourceTree = "<group>"; };
@@ -1015,9 +1015,9 @@
 				F1A634AD1DF94D8600CA6BBE /* JAJSetViewController.h */,
 				F1A634AE1DF94D8600CA6BBE /* JAJSetViewController.m */,
 				F1A634AF1DF94D8600CA6BBE /* JAJSetViewController.xib */,
-				F1A634B21DF94DC400CA6BBE /* ChangePassWordViewController.h */,
-				F1A634B31DF94DC400CA6BBE /* ChangePassWordViewController.m */,
-				F1A634B41DF94DC400CA6BBE /* ChangePassWordViewController.xib */,
+				F1D18FB81E07B3360032A028 /* ChangePassWordViewController.h */,
+				F1D18FB91E07B3360032A028 /* ChangePassWordViewController.m */,
+				F1D18FBA1E07B3360032A028 /* ChangePassWordViewController.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1474,13 +1474,13 @@
 			files = (
 				F1A634A71DF94D2900CA6BBE /* FeedBackViewController.xib in Resources */,
 				F1DA22881DF00B8C00743904 /* ActIssueSearchTableViewCell.xib in Resources */,
+				F1D18FBC1E07B3360032A028 /* ChangePassWordViewController.xib in Resources */,
 				F1AE57241DF641EF007515F3 /* BackViewController.xib in Resources */,
 				237D22461DF427B800FC1B47 /* CommentViewController.xib in Resources */,
 				F17B2F2B1DF6BE11005DB3E4 /* TipsViewController.xib in Resources */,
 				237D22371DF4272500FC1B47 /* CloudKnowViewController.xib in Resources */,
 				F1BF5B131DEA9283006AA3BA /* LaunchScreen.storyboard in Resources */,
 				23CB26671DF44A5600BA5889 /* b27_icon_star_gray@2x.png in Resources */,
-				F1A634B61DF94DC400CA6BBE /* ChangePassWordViewController.xib in Resources */,
 				F1A32CAE1DEFF5B700EEE274 /* ActIssueSearchViewController.xib in Resources */,
 				237D22501DF427EC00FC1B47 /* MoreViewController.xib in Resources */,
 				F1A33BCD1DED1558007E6F2E /* ActSearchTableViewCell.xib in Resources */,
@@ -1647,7 +1647,6 @@
 				F1BF5BAC1DEAC9DE006AA3BA /* NSData+SDDataCache.m in Sources */,
 				F1BF5BAF1DEAC9DE006AA3BA /* TADotView.m in Sources */,
 				F1BF5BAD1DEAC9DE006AA3BA /* TAAbstractDotView.m in Sources */,
-				F1A634B51DF94DC400CA6BBE /* ChangePassWordViewController.m in Sources */,
 				F1BF5B081DEA9283006AA3BA /* AppDelegate.m in Sources */,
 				F1ED65161DEC0FDF00FFD4C8 /* HangyeDetialViewController.m in Sources */,
 				F1BF5B7C1DEAAD5F006AA3BA /* SaleRecordViewController.m in Sources */,
@@ -1677,6 +1676,7 @@
 				237D22111DF4249700FC1B47 /* CloudViewController.m in Sources */,
 				F1ED650F1DEC0FDF00FFD4C8 /* MapViewController.m in Sources */,
 				F1BF5B661DEAAB6F006AA3BA /* UIView+Extension.m in Sources */,
+				F1D18FBB1E07B3360032A028 /* ChangePassWordViewController.m in Sources */,
 				3B343BB61DED66EC00474549 /* ClearCacheTool.m in Sources */,
 				3B341E511E024E2200592A1C /* CompanyDetialController.m in Sources */,
 				3B341E5A1E02836600592A1C /* NormalIconView.m in Sources */,
