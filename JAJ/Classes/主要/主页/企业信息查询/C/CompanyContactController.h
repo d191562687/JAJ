@@ -1,8 +1,8 @@
 //
-//  CompanyDetialController.h
+//  CompanyContactController.h
 //  JAJ
 //
-//  Created by Chan_Sir on 2016/12/15.
+//  Created by Chan_Sir on 2016/12/20.
 //  Copyright © 2016年 JinAnJian. All rights reserved.
 //
 
@@ -10,7 +10,8 @@
 #import "CompayModel.h"
 
 
-@interface CompanyDetialController : SuperViewController
+
+@interface CompanyContactController : SuperViewController
 
 @property (strong,nonatomic) CompayModel *model;
 

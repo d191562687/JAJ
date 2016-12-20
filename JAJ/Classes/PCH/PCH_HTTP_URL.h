@@ -14,7 +14,7 @@
 //外网IP  http://124.207.212.87:8098
 
 //IP/端口设置
-#define ip_port @"http://192.168.1.70:8098"
+#define ip_port @"http://124.207.212.87:8098"
 /** 贴士游览接口 */
 #define appShiyts_URL @"/SYAQ/appShiyts/queryShiytsList.do?"
 /** 贴士详情 */

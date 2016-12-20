@@ -22,6 +22,8 @@
 #define BackGroudColor RGBACOLOR(235, 235, 241, 1)
 //  比例
 #define CKproportion [[UIScreen mainScreen] bounds].size.width/375.0f
+// iOS系统版本
+#define iOS_Version [[[UIDevice currentDevice] systemVersion] doubleValue]
 // 主要颜色
 #define MainColor RGBACOLOR(31, 139, 229, 1)
 // 导航控制器颜色 RGBACOLOR(58, 58, 58, 1)

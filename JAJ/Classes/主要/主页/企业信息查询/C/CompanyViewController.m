@@ -98,7 +98,7 @@
 - (UITableView *)searchTableView
 {
     if (!_searchTableView) {
-        _searchTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - 50) style:UITableViewStylePlain];
+        _searchTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - 50-44) style:UITableViewStylePlain];
         _searchTableView.rowHeight = 60;
         _searchTableView.dataSource = self;
         _searchTableView.delegate = self;
