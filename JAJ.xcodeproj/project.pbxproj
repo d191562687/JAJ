@@ -38,7 +38,6 @@
 		3B343BA01DED4C5300474549 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B343B9F1DED4C5300474549 /* Account.m */; };
 		3B343BA31DED4C9400474549 /* AccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B343BA21DED4C9400474549 /* AccountTool.m */; };
 		3B343BA61DED4FD400474549 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B343BA51DED4FD400474549 /* LoginViewController.m */; };
-		3B343BA91DED513000474549 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B343BA81DED513000474549 /* UserInfoViewController.m */; };
 		3B343BB01DED63C100474549 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B343BAF1DED63C100474549 /* UserModel.m */; };
 		3B343BB31DED63CE00474549 /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B343BB21DED63CE00474549 /* UserInfoManager.m */; };
 		3B343BB61DED66EC00474549 /* ClearCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B343BB51DED66EC00474549 /* ClearCacheTool.m */; };
@@ -65,6 +64,8 @@
 		F1A634B11DF94D8600CA6BBE /* JAJSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A634AF1DF94D8600CA6BBE /* JAJSetViewController.xib */; };
 		F1A9F6811DF793DE00F211AF /* TipsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A9F6801DF793DE00F211AF /* TipsModel.m */; };
 		F1A9F6841DF7960F00F211AF /* TipsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A9F6831DF7960F00F211AF /* TipsTableViewCell.m */; };
+		F1AD129F1E08C1F300BE0DC0 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD129D1E08C1F300BE0DC0 /* UserInfoViewController.m */; };
+		F1AD12A01E08C1F300BE0DC0 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AD129E1E08C1F300BE0DC0 /* UserInfoViewController.xib */; };
 		F1AE57231DF641EF007515F3 /* BackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE57211DF641EF007515F3 /* BackViewController.m */; };
 		F1AE57241DF641EF007515F3 /* BackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AE57221DF641EF007515F3 /* BackViewController.xib */; };
 		F1AE57271DF64890007515F3 /* CompayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE57261DF64890007515F3 /* CompayModel.m */; };
@@ -195,8 +196,6 @@
 		3B343BA21DED4C9400474549 /* AccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTool.m; sourceTree = "<group>"; };
 		3B343BA41DED4FD400474549 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		3B343BA51DED4FD400474549 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		3B343BA71DED513000474549 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
-		3B343BA81DED513000474549 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		3B343BAE1DED63C100474549 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		3B343BAF1DED63C100474549 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		3B343BB11DED63CE00474549 /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
@@ -244,6 +243,9 @@
 		F1A9F6801DF793DE00F211AF /* TipsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsModel.m; sourceTree = "<group>"; };
 		F1A9F6821DF7960F00F211AF /* TipsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsTableViewCell.h; sourceTree = "<group>"; };
 		F1A9F6831DF7960F00F211AF /* TipsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsTableViewCell.m; sourceTree = "<group>"; };
+		F1AD129C1E08C1F300BE0DC0 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		F1AD129D1E08C1F300BE0DC0 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		F1AD129E1E08C1F300BE0DC0 /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
 		F1AE57201DF641EF007515F3 /* BackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackViewController.h; sourceTree = "<group>"; };
 		F1AE57211DF641EF007515F3 /* BackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackViewController.m; sourceTree = "<group>"; };
 		F1AE57221DF641EF007515F3 /* BackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackViewController.xib; sourceTree = "<group>"; };
@@ -1001,8 +1003,9 @@
 				3B343BA51DED4FD400474549 /* LoginViewController.m */,
 				3B213F4B1DFEA0800088728C /* RegisterViewController.h */,
 				3B213F4C1DFEA0800088728C /* RegisterViewController.m */,
-				3B343BA71DED513000474549 /* UserInfoViewController.h */,
-				3B343BA81DED513000474549 /* UserInfoViewController.m */,
+				F1AD129C1E08C1F300BE0DC0 /* UserInfoViewController.h */,
+				F1AD129D1E08C1F300BE0DC0 /* UserInfoViewController.m */,
+				F1AD129E1E08C1F300BE0DC0 /* UserInfoViewController.xib */,
 				F1A6349E1DF94CD800CA6BBE /* AboutViewController.h */,
 				F1A6349F1DF94CD800CA6BBE /* AboutViewController.m */,
 				F1A634A01DF94CD800CA6BBE /* AboutViewController.xib */,
@@ -1484,6 +1487,7 @@
 				F1A32CAE1DEFF5B700EEE274 /* ActIssueSearchViewController.xib in Resources */,
 				237D22501DF427EC00FC1B47 /* MoreViewController.xib in Resources */,
 				F1A33BCD1DED1558007E6F2E /* ActSearchTableViewCell.xib in Resources */,
+				F1AD12A01E08C1F300BE0DC0 /* UserInfoViewController.xib in Resources */,
 				F1FC3ABF1DF53EAD004B413C /* FoueTableViewCell.xib in Resources */,
 				237D224B1DF427D600FC1B47 /* SignViewController.xib in Resources */,
 				23CB26681DF44A5600BA5889 /* b27_icon_star_yellow@2x.png in Resources */,
@@ -1669,6 +1673,7 @@
 				F1A33BC81DED0F74007E6F2E /* ActSearchViewModel.m in Sources */,
 				F1ED651C1DEC0FDF00FFD4C8 /* NormalCollectionViewCell.m in Sources */,
 				F1A634A11DF94CD800CA6BBE /* AboutViewController.m in Sources */,
+				F1AD129F1E08C1F300BE0DC0 /* UserInfoViewController.m in Sources */,
 				3B343BA01DED4C5300474549 /* Account.m in Sources */,
 				F1FC3ABE1DF53EAD004B413C /* FoueTableViewCell.m in Sources */,
 				F1BF5BB31DEAC9DE006AA3BA /* UIView+SDExtension.m in Sources */,
@@ -1700,7 +1705,6 @@
 				F1BF5B4B1DEAA8C5006AA3BA /* RootNavgationController.m in Sources */,
 				F1A634B01DF94D8600CA6BBE /* JAJSetViewController.m in Sources */,
 				F1ED651A1DEC0FDF00FFD4C8 /* HomeCollectionView.m in Sources */,
-				3B343BA91DED513000474549 /* UserInfoViewController.m in Sources */,
 				3B343BA31DED4C9400474549 /* AccountTool.m in Sources */,
 				3B343BB01DED63C100474549 /* UserModel.m in Sources */,
 				F1ED65181DEC0FDF00FFD4C8 /* HomeListModel.m in Sources */,
