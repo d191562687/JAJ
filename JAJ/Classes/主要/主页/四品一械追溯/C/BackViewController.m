@@ -60,12 +60,12 @@
     NSDictionary *param = @{@"json":[self switchToJsonStrFrom:dict]};
     
     [HTTPManager POST:url params:param success:^(NSURLSessionDataTask *task, id responseObject) {
-        
         NSLog(@"responseObject = %@",responseObject);
-        
     } fail:^(NSURLSessionDataTask *task, NSError *error) {
         [self sendAlertAction:error.localizedDescription];
     }];
+
+    
 }
 
 @end
