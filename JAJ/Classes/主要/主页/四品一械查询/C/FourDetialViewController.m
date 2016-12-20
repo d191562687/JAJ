@@ -8,6 +8,7 @@
 
 #import "FourDetialViewController.h"
 
+
 @interface FourDetialViewController ()
 
 @end
@@ -30,6 +31,7 @@
     
     [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"responseObject = %@",responseObject);
+        
     } fail:^(NSURLSessionDataTask *task, NSError *error) {
         [self sendAlertAction:error.localizedDescription];
     }];
