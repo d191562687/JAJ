@@ -43,6 +43,8 @@
 #define appQiand_URL @"/SYAQ/appQiand/qiand.do?"
 /** 四品一械列表 */
 #define appSpyx_URL @"/SYAQ/appSpyx/querySpyxList.do?"
+/** 四品一械详情 */
+#define appSpyxDetial_URL @"/SYAQ/appSpyx/querySpyxInfo.do?"
 /** 厂家查询列表 */
 #define appCjcx_URL @"/SYAQ/appCjcx/cjcxList.do?"
 /** 厂家详情 */

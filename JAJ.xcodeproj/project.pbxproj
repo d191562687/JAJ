@@ -47,6 +47,7 @@
 		3BF32CD01E08D0A40015C0BE /* NormalIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF32CC31E08D0A40015C0BE /* NormalIconView.m */; };
 		3BF32CD11E08D0A40015C0BE /* WebViewTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF32CC51E08D0A40015C0BE /* WebViewTableCell.m */; };
 		3BF32CD21E08D0A40015C0BE /* YLZGTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF32CC71E08D0A40015C0BE /* YLZGTitleLabel.m */; };
+		3BF32CEA1E08FCB20015C0BE /* FourDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF32CE91E08FCB20015C0BE /* FourDetialViewController.m */; };
 		D1BD50CB8F0650C1B3928DF4 /* libPods-JAJTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F275175999E426096B5E6B4C /* libPods-JAJTests.a */; };
 		F117E9381DF6A58800371929 /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F117E9371DF6A58800371929 /* BaseMapViewController.m */; };
 		F15016021DEE5E2300485537 /* ActSearchDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15016001DEE5E2300485537 /* ActSearchDetialViewController.m */; };
@@ -218,6 +219,8 @@
 		3BF32CC51E08D0A40015C0BE /* WebViewTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewTableCell.m; sourceTree = "<group>"; };
 		3BF32CC61E08D0A40015C0BE /* YLZGTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZGTitleLabel.h; sourceTree = "<group>"; };
 		3BF32CC71E08D0A40015C0BE /* YLZGTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZGTitleLabel.m; sourceTree = "<group>"; };
+		3BF32CE81E08FCB20015C0BE /* FourDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourDetialViewController.h; sourceTree = "<group>"; };
+		3BF32CE91E08FCB20015C0BE /* FourDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourDetialViewController.m; sourceTree = "<group>"; };
 		A334F91E98201FE51FDC4264 /* Pods-JAJUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAJUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JAJUITests/Pods-JAJUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ABA13ABF035E90A84C783D3E /* Pods-JAJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAJTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JAJTests/Pods-JAJTests.release.xcconfig"; sourceTree = "<group>"; };
 		B7B85EC5F3224A7FBCD1475F /* Pods-JAJUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAJUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JAJUITests/Pods-JAJUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1219,6 +1222,8 @@
 			children = (
 				F1ED64ED1DEC0FDF00FFD4C8 /* FourViewController.h */,
 				F1ED64EE1DEC0FDF00FFD4C8 /* FourViewController.m */,
+				3BF32CE81E08FCB20015C0BE /* FourDetialViewController.h */,
+				3BF32CE91E08FCB20015C0BE /* FourDetialViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1684,6 +1689,7 @@
 				F117E9381DF6A58800371929 /* BaseMapViewController.m in Sources */,
 				F1BF5B481DEAA89D006AA3BA /* SuperViewController.m in Sources */,
 				F1BF5B981DEAC3D5006AA3BA /* LimiteCache.m in Sources */,
+				3BF32CEA1E08FCB20015C0BE /* FourDetialViewController.m in Sources */,
 				F1BF5B621DEAAB6F006AA3BA /* NSDate+Category.m in Sources */,
 				F1DA22871DF00B8C00743904 /* ActIssueSearchTableViewCell.m in Sources */,
 				3BF32CC91E08D0A40015C0BE /* CompanyContactController.m in Sources */,

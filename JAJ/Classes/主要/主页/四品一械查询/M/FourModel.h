@@ -16,7 +16,7 @@
 
 @interface FourModel : NSObject
 /** id */
-@property (strong,nonatomic) NSString * Id;
+@property (strong,nonatomic) NSString * id;
 /** 批准文号 */
 @property (strong,nonatomic) NSString * pzwh;
 /** 条形码*/

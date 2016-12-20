@@ -10,27 +10,30 @@
 #import <MJRefresh.h>
 #import <MJExtension.h>
 #import <MBProgressHUD.h>
+#import "FourDetialViewController.h"
 #import "FoueTableViewCell.h"
 #import "FourModel.h"
 
 @interface FourViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
+
 /** 搜索表 */
 @property (nonatomic, strong) UITableView * searchTableView;
 /** 搜索数据 */
-@property (nonatomic, strong) NSMutableArray * dataSource;
+@property (nonatomic, strong) NSArray * dataSource;
 /** 搜索栏 */
 @property (nonatomic, strong) UISearchBar * searchBar;
 /** 搜索后数据 */
 @property (nonatomic, strong) NSArray * resultArray;
 /** 品名 */
 @property (strong,nonatomic) NSString * pinmingName;
+
 @end
 
 @implementation FourViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"四品一械查询";
+    self.title = @"药品查询";
     
     [self setupSubviews];
 }
@@ -43,10 +46,8 @@
     [self.view addSubview:self.searchTableView];
     self.searchTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         //数据请求
-        [self loadWithName:@""];
+        [self loadWithName:self.searchBar.text];
     }];
-    /** 每次加载先刷新数据 */
-    [self.searchTableView.mj_header beginRefreshing];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -66,49 +67,38 @@
     FourModel * model = _dataSource[indexPath.row];
     cell.model = model;
     
-     NSLog(@"modeel ==  %@",model);
-    
     return cell;
 }
 /** cell点击 */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
-    
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    FourDetialViewController *detial = [FourDetialViewController new];
+    detial.fourModel = self.dataSource[indexPath.row];
+    [self.navigationController pushViewController:detial animated:YES];
 }
 
 
 /** 当搜索内容改变时开始搜索 */
-- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
-    //如果数据量过大的话  采用多线程防止卡顿
-    NSLog(@"正在搜索...");
+    [self.view endEditing:YES];
     //子线程
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        if ([searchText isEqualToString:@""]) {
-            _resultArray = [NSArray array];
+        if ([searchBar.text isEqualToString:@""]) {
+            return ;
         }
-        else{
-            // 主要功能，调用方法实现搜索
-            NSLog(@"searchText  ===   %@",searchText);
-            NSString * strname = [NSString stringWithFormat:@"%@",searchText];
-            [self loadWithName:strname];
-            
-        }
-        // 主线程
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            [_searchTableView reloadData];
-            NSLog(@"隐藏旋转按钮");
-        });
+        // 主要功能，调用方法实现搜索
+        [self.searchTableView.mj_header beginRefreshing];
+        
     });
-    
 }
+
 
 - (void)loadWithName:(NSString *)name
 {
+    [self.view endEditing:YES];
+    
     NSString *url = [NSString stringWithFormat:@"%@%@",ip_port,appSpyx_URL];
 //    json={keyword :"王老吉"}
     NSDictionary *params = @{
@@ -120,15 +110,20 @@
     
     [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
         [self.searchTableView.mj_header endRefreshing];
-        
-     //   NSLog(@"responseObject = %@",responseObject);
         // 成功
-        NSArray *data = [responseObject objectForKey:@"data"];
-        self.dataSource = [FourModel mj_objectArrayWithKeyValuesArray:data];
-        
-   //     NSLog(@"self.dataSource = %@",self.dataSource);
-        [self.searchTableView reloadData];
-   
+        NSString *code = [[responseObject objectForKey:@"code"] description];
+        NSString *message = [[responseObject objectForKey:@"desc"] description];
+        if ([code isEqualToString:@"0000"]) {
+            NSArray *data = [responseObject objectForKey:@"data"];
+            self.dataSource = [FourModel mj_objectArrayWithKeyValuesArray:data];
+            [self.searchTableView reloadData];
+            self.searchTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+                
+            }];
+            [self.searchTableView.mj_footer endRefreshingWithNoMoreData];
+        }else{
+            [self sendAlertAction:message];
+        }
     } fail:^(NSURLSessionDataTask *task, NSError *error) {
         [self.searchTableView.mj_header endRefreshing];
         [self sendAlertAction:error.localizedDescription];
@@ -140,6 +135,7 @@
 - (void)createSearchBar {
     _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50)];
     _searchBar.delegate = self;
+    _searchBar.returnKeyType = UIReturnKeySearch;
     _searchBar.placeholder = @"请输入查询物品关键字";
     [self.view addSubview:_searchBar];
 }
@@ -147,7 +143,6 @@
 - (UITableView *)searchTableView{
     if (!_searchTableView) {
         _searchTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, SCREEN_HEIGHT - 64 -50) style:UITableViewStylePlain];
-        
         _searchTableView.rowHeight = 150;
         _searchTableView.dataSource = self;
         _searchTableView.delegate = self;
@@ -157,13 +152,5 @@
     }
     return _searchTableView;
 }
-- (NSMutableArray *)dataSource
-{
-    if (!_dataSource) {
-        _dataSource = [NSMutableArray array];
-    }
-    return _dataSource;
-}
-
 
 @end

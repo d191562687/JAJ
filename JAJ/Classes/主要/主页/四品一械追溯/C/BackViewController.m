@@ -37,15 +37,15 @@
 - (IBAction)SearchAction:(UIButton *)sender
 {
     
-//    if (self.companyNameField.text.length < 1) {
-//        return;
-//    }
-//    if (self.productNameField.text.length < 1) {
-//        return;
-//    }
-//    if (self.piciField.text.length < 1) {
-//        return;
-//    }
+    if (self.companyNameField.text.length < 1) {
+        return;
+    }
+    if (self.productNameField.text.length < 1) {
+        return;
+    }
+    if (self.piciField.text.length < 1) {
+        return;
+    }
     
     NSString *url = [NSString stringWithFormat:@"%@%@",ip_port,appSPYXZS_URL];
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
@@ -59,7 +59,7 @@
     
     NSDictionary *param = @{@"json":[self switchToJsonStrFrom:dict]};
     
-    [HTTPManager GET:url params:param success:^(NSURLSessionDataTask *task, id responseObject) {
+    [HTTPManager POST:url params:param success:^(NSURLSessionDataTask *task, id responseObject) {
         
         NSLog(@"responseObject = %@",responseObject);
         
