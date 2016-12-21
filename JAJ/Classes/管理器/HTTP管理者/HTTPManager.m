@@ -38,7 +38,6 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        
         id dic = [HTTPManager responseConfiguration:responseObject];
         
         success(task,dic);
@@ -56,9 +55,6 @@
     NSString *URL = [url stringByAddingPercentEncodingWithAllowedCharacters:set];
     [manager POST:URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
  
-        NSString *resultString  =[[ NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSLog(@"resultString》》》》》》: %@", resultString);
-        
         id dic = [HTTPManager responseConfiguration:responseObject];
         
         success(task,dic);
