@@ -7,6 +7,7 @@
 //
 
 #import "SignViewController.h"
+#import "Calendar.h"
 
 @interface SignViewController ()
 
@@ -22,8 +23,31 @@
 
     [self getData];
     
+    [self setupView];
 
 }
+
+- (void)setupView
+{
+    Calendar *calendar = [[Calendar alloc] initWithFrame:CGRectMake(20,20, SCREEN_WIDTH - 40 , SCREEN_HEIGHT / 1.7)];
+    [self.view addSubview:calendar];
+    
+    NSString * ss = @"2016-12-01";
+    NSString * bb = [ss substringFromIndex:ss.length - 2];
+    NSLog(@"b==  %@",bb);
+    
+    NSArray * arr = @[bb,@"04"];
+    
+    [calendar initSign:arr Touch:^(NSString *date) {
+        
+        NSLog(@"点击了日期:%@",date);
+    }];
+    
+    
+    
+    
+}
+
 
 - (void)getData
 {

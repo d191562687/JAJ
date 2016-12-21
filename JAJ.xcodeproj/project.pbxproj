@@ -115,6 +115,8 @@
 		F1DA22871DF00B8C00743904 /* ActIssueSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DA22851DF00B8C00743904 /* ActIssueSearchTableViewCell.m */; };
 		F1DA22881DF00B8C00743904 /* ActIssueSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DA22861DF00B8C00743904 /* ActIssueSearchTableViewCell.xib */; };
 		F1DA228B1DF0119E00743904 /* ActIssueSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DA228A1DF0119E00743904 /* ActIssueSearchModel.m */; };
+		F1E5B9771E0A2FFE00AE75E8 /* viewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B9761E0A2FFE00AE75E8 /* viewFrame.m */; };
+		F1E5B97A1E0A30E500AE75E8 /* Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B9791E0A30E500AE75E8 /* Calendar.m */; };
 		F1ED650F1DEC0FDF00FFD4C8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED64DA1DEC0FDF00FFD4C8 /* MapViewController.m */; };
 		F1ED65131DEC0FDF00FFD4C8 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED64EE1DEC0FDF00FFD4C8 /* FourViewController.m */; };
 		F1ED65151DEC0FDF00FFD4C8 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED64FA1DEC0FDF00FFD4C8 /* ActivityViewController.m */; };
@@ -347,6 +349,10 @@
 		F1DA22861DF00B8C00743904 /* ActIssueSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActIssueSearchTableViewCell.xib; sourceTree = "<group>"; };
 		F1DA22891DF0119E00743904 /* ActIssueSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActIssueSearchModel.h; sourceTree = "<group>"; };
 		F1DA228A1DF0119E00743904 /* ActIssueSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActIssueSearchModel.m; sourceTree = "<group>"; };
+		F1E5B9751E0A2FFE00AE75E8 /* viewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewFrame.h; path = "JAJ/Classes/主要/我/C/viewFrame.h"; sourceTree = SOURCE_ROOT; };
+		F1E5B9761E0A2FFE00AE75E8 /* viewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = viewFrame.m; path = "JAJ/Classes/主要/我/C/viewFrame.m"; sourceTree = SOURCE_ROOT; };
+		F1E5B9781E0A30E500AE75E8 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Calendar.h; path = "JAJ/Classes/主要/我/C/Calendar.h"; sourceTree = SOURCE_ROOT; };
+		F1E5B9791E0A30E500AE75E8 /* Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Calendar.m; path = "JAJ/Classes/主要/我/C/Calendar.m"; sourceTree = SOURCE_ROOT; };
 		F1ED64D91DEC0FDF00FFD4C8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		F1ED64DA1DEC0FDF00FFD4C8 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		F1ED64ED1DEC0FDF00FFD4C8 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
@@ -566,6 +572,10 @@
 		237D22211DF4269800FC1B47 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				F1E5B9751E0A2FFE00AE75E8 /* viewFrame.h */,
+				F1E5B9761E0A2FFE00AE75E8 /* viewFrame.m */,
+				F1E5B9781E0A30E500AE75E8 /* Calendar.h */,
+				F1E5B9791E0A30E500AE75E8 /* Calendar.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -1672,6 +1682,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E5B97A1E0A30E500AE75E8 /* Calendar.m in Sources */,
 				237D22541DF4281000FC1B47 /* FoodViewController.m in Sources */,
 				F1BF5BAC1DEAC9DE006AA3BA /* NSData+SDDataCache.m in Sources */,
 				F1BF5BAF1DEAC9DE006AA3BA /* TADotView.m in Sources */,
@@ -1712,6 +1723,7 @@
 				F18FF79F1DF11EF800D64248 /* ActIssueDetialViewController.m in Sources */,
 				237D225E1DF4295600FC1B47 /* MarketquotationViewController.m in Sources */,
 				F1BF5B651DEAAB6F006AA3BA /* UIBarButtonItem+Extension.m in Sources */,
+				F1E5B9771E0A2FFE00AE75E8 /* viewFrame.m in Sources */,
 				F1BF5B521DEAAAA7006AA3BA /* JAJConstKey.m in Sources */,
 				237D22361DF4272500FC1B47 /* CloudKnowViewController.m in Sources */,
 				F1B555E21DF909D900EDB764 /* FoodTableViewCell.m in Sources */,
