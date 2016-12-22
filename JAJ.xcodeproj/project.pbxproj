@@ -1463,7 +1463,7 @@
 				TargetAttributes = {
 					F1BF5AFF1DEA9283006AA3BA = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = ATR2R32RX5;
+						DevelopmentTeam = 36CGP7LVDZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1914,7 +1914,7 @@
 			baseConfigurationReference = CDF0868F504838E191EE4535 /* Pods-JAJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ATR2R32RX5;
+				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/JAJ/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = JAJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1930,7 +1930,7 @@
 			baseConfigurationReference = 321C21FC1DC1A11295C916B2 /* Pods-JAJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ATR2R32RX5;
+				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/JAJ/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = JAJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

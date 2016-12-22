@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignViewController">
             <connections>
+                <outlet property="day" destination="aWZ-1o-QvR" id="Y1q-Dc-3iB"/>
+                <outlet property="number" destination="mWS-nM-SWb" id="ATS-NL-yeY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -70,6 +72,9 @@
                             <integer key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="calendarUP:" destination="-1" eventType="touchUpInside" id="pNo-be-XaR"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -73,5 +73,10 @@ updatingLocation:(BOOL)updatingLocation
 }
 
 
+- (void)dealloc
+{
+    
+}
+
 
 @end
