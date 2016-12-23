@@ -41,6 +41,8 @@
 #define appUserXgzl_URL @"/SYAQ/appXgzl/xgzlList_app.do?"
 /** 签到 */
 #define appQiand_URL @"/SYAQ/appQiand/qiand.do?"
+/** 签到信息查询 */
+#define appQiandCX_URL @"/SYAQ/appQiand/findqiand.do?"
 /** 四品一械列表 */
 #define appSpyx_URL @"/SYAQ/appSpyx/querySpyxList.do?"
 /** 四品一械详情 */
