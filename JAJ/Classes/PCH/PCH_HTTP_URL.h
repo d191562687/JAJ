@@ -59,6 +59,8 @@
 #define appSpyxSS_URL @"/SYAQ/appSpyx/saveAppGjjl.do?"
 /** 四品一械追溯 */
 #define appSPYXZS_URL @"/SYAQ/appSpyxZs/querySpyxZsList.do?"
+/** 地图周边 */
+#define appMap_URL @"/SYAQ/appGddt/queryGddtFindList.do?"
 
 
 

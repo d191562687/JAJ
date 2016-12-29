@@ -8,10 +8,7 @@
 
 #import "SuperViewController.h"
 #import <Foundation/Foundation.h>
-#import <MAMapKit/MAMapKit.h>
-#import <AMapSearchKit/AMapSearchKit.h>
-#import <AMapFoundationKit/AMapFoundationKit.h>
-#import <AMapNaviKit/AMapNaviKit.h>
+
 
 @interface MapViewController : SuperViewController
 

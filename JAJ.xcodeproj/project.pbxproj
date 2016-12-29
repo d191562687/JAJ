@@ -49,7 +49,6 @@
 		3BF32CD21E08D0A40015C0BE /* YLZGTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF32CC71E08D0A40015C0BE /* YLZGTitleLabel.m */; };
 		3BF32CEA1E08FCB20015C0BE /* FourDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF32CE91E08FCB20015C0BE /* FourDetialViewController.m */; };
 		D1BD50CB8F0650C1B3928DF4 /* libPods-JAJTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F275175999E426096B5E6B4C /* libPods-JAJTests.a */; };
-		F117E9381DF6A58800371929 /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F117E9371DF6A58800371929 /* BaseMapViewController.m */; };
 		F15016021DEE5E2300485537 /* ActSearchDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15016001DEE5E2300485537 /* ActSearchDetialViewController.m */; };
 		F15016031DEE5E2300485537 /* ActSearchDetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15016011DEE5E2300485537 /* ActSearchDetialViewController.xib */; };
 		F17B2F2A1DF6BE11005DB3E4 /* TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17B2F281DF6BE11005DB3E4 /* TipsViewController.m */; };
@@ -110,6 +109,7 @@
 		F1BF5BB11DEAC9DE006AA3BA /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF5BA71DEAC9DE006AA3BA /* SDCollectionViewCell.m */; };
 		F1BF5BB21DEAC9DE006AA3BA /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF5BA91DEAC9DE006AA3BA /* SDCycleScrollView.m */; };
 		F1BF5BB31DEAC9DE006AA3BA /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF5BAB1DEAC9DE006AA3BA /* UIView+SDExtension.m */; };
+		F1D0E0BD1E1394F700148DF9 /* JAJAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D0E0BC1E1394F700148DF9 /* JAJAnnotation.m */; };
 		F1D18FBB1E07B3360032A028 /* ChangePassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D18FB91E07B3360032A028 /* ChangePassWordViewController.m */; };
 		F1D18FBC1E07B3360032A028 /* ChangePassWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D18FBA1E07B3360032A028 /* ChangePassWordViewController.xib */; };
 		F1DA22871DF00B8C00743904 /* ActIssueSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DA22851DF00B8C00743904 /* ActIssueSearchTableViewCell.m */; };
@@ -228,8 +228,6 @@
 		B7B85EC5F3224A7FBCD1475F /* Pods-JAJUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAJUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JAJUITests/Pods-JAJUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDF0868F504838E191EE4535 /* Pods-JAJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JAJ/Pods-JAJ.debug.xcconfig"; sourceTree = "<group>"; };
 		D14B5217A7FE547110CF3102 /* Pods-JAJTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAJTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JAJTests/Pods-JAJTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F117E9361DF6A58800371929 /* BaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapViewController.h; sourceTree = "<group>"; };
-		F117E9371DF6A58800371929 /* BaseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapViewController.m; sourceTree = "<group>"; };
 		F15015FF1DEE5E2300485537 /* ActSearchDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActSearchDetialViewController.h; sourceTree = "<group>"; };
 		F15016001DEE5E2300485537 /* ActSearchDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActSearchDetialViewController.m; sourceTree = "<group>"; };
 		F15016011DEE5E2300485537 /* ActSearchDetialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActSearchDetialViewController.xib; sourceTree = "<group>"; };
@@ -341,6 +339,8 @@
 		F1BF5BA91DEAC9DE006AA3BA /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		F1BF5BAA1DEAC9DE006AA3BA /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		F1BF5BAB1DEAC9DE006AA3BA /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		F1D0E0BB1E1394F700148DF9 /* JAJAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAJAnnotation.h; path = "JAJ/Classes/主要/我/C/JAJAnnotation.h"; sourceTree = SOURCE_ROOT; };
+		F1D0E0BC1E1394F700148DF9 /* JAJAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAJAnnotation.m; path = "JAJ/Classes/主要/我/C/JAJAnnotation.m"; sourceTree = SOURCE_ROOT; };
 		F1D18FB81E07B3360032A028 /* ChangePassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassWordViewController.h; sourceTree = "<group>"; };
 		F1D18FB91E07B3360032A028 /* ChangePassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordViewController.m; sourceTree = "<group>"; };
 		F1D18FBA1E07B3360032A028 /* ChangePassWordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePassWordViewController.xib; sourceTree = "<group>"; };
@@ -1171,8 +1171,6 @@
 			children = (
 				F1ED64D91DEC0FDF00FFD4C8 /* MapViewController.h */,
 				F1ED64DA1DEC0FDF00FFD4C8 /* MapViewController.m */,
-				F117E9361DF6A58800371929 /* BaseMapViewController.h */,
-				F117E9371DF6A58800371929 /* BaseMapViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1180,6 +1178,8 @@
 		F1ED64DB1DEC0FDF00FFD4C8 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				F1D0E0BB1E1394F700148DF9 /* JAJAnnotation.h */,
+				F1D0E0BC1E1394F700148DF9 /* JAJAnnotation.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -1697,7 +1697,6 @@
 				F1BF5B051DEA9283006AA3BA /* main.m in Sources */,
 				F1BF5BB01DEAC9DE006AA3BA /* TAPageControl.m in Sources */,
 				F1BF5B641DEAAB6F006AA3BA /* NSString+StrCategory.m in Sources */,
-				F117E9381DF6A58800371929 /* BaseMapViewController.m in Sources */,
 				F1BF5B481DEAA89D006AA3BA /* SuperViewController.m in Sources */,
 				F1BF5B981DEAC3D5006AA3BA /* LimiteCache.m in Sources */,
 				3BF32CEA1E08FCB20015C0BE /* FourDetialViewController.m in Sources */,
@@ -1750,6 +1749,7 @@
 				F1ED65181DEC0FDF00FFD4C8 /* HomeListModel.m in Sources */,
 				F1BF5B991DEAC3D5006AA3BA /* NSString+Hashing.m in Sources */,
 				F1BF5B851DEAB936006AA3BA /* WoViewController.m in Sources */,
+				F1D0E0BD1E1394F700148DF9 /* JAJAnnotation.m in Sources */,
 				3BF32CD01E08D0A40015C0BE /* NormalIconView.m in Sources */,
 				F1BF5B971DEAC3D5006AA3BA /* HTTPManager.m in Sources */,
 				3B343AD81DEBD1B400474549 /* UIViewController+Actions.m in Sources */,
@@ -1917,7 +1917,7 @@
 				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/JAJ/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = JAJ/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinanjian.JAJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1933,7 +1933,7 @@
 				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/JAJ/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = JAJ/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinanjian.JAJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";

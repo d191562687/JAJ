@@ -16,3 +16,4 @@
 #define USER_DEFAULT [NSUserDefaults standardUserDefaults];
 
 UIKIT_EXTERN NSString *const UDTipsDetailed; // 存储贴士详情
+UIKIT_EXTERN NSString *const UDmap; // 存储地图周边坐标

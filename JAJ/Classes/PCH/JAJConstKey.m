@@ -14,3 +14,4 @@
 
 /************* NSUserDefault 关键字 **************/
 NSString *const UDTipsDetailed = @"UDTipsDetailed";
+NSString *const UDmap = @"UDmap";

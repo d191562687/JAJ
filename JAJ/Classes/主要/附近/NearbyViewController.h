@@ -7,10 +7,10 @@
 //
 
 #import "SuperViewController.h"
-
+#import <MapKit/MapKit.h>
 
 @interface NearbyViewController : SuperViewController
 
-
+@property (strong, nonatomic) MKMapView *map;
 
 @end
