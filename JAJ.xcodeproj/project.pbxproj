@@ -55,6 +55,9 @@
 		F17B2F2B1DF6BE11005DB3E4 /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17B2F291DF6BE11005DB3E4 /* TipsViewController.xib */; };
 		F18FF79F1DF11EF800D64248 /* ActIssueDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18FF79D1DF11EF800D64248 /* ActIssueDetialViewController.m */; };
 		F18FF7A01DF11EF800D64248 /* ActIssueDetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18FF79E1DF11EF800D64248 /* ActIssueDetialViewController.xib */; };
+		F199C4751E2475DF00DF1C62 /* FourDetialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F199C4741E2475DF00DF1C62 /* FourDetialModel.m */; };
+		F199C4791E247ACB00DF1C62 /* FourBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F199C4771E247ACB00DF1C62 /* FourBasicViewController.m */; };
+		F199C47A1E247ACB00DF1C62 /* FourBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F199C4781E247ACB00DF1C62 /* FourBasicViewController.xib */; };
 		F1A32CAD1DEFF5B700EEE274 /* ActIssueSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A32CAB1DEFF5B700EEE274 /* ActIssueSearchViewController.m */; };
 		F1A32CAE1DEFF5B700EEE274 /* ActIssueSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A32CAC1DEFF5B700EEE274 /* ActIssueSearchViewController.xib */; };
 		F1A33BC81DED0F74007E6F2E /* ActSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A33BC71DED0F74007E6F2E /* ActSearchViewModel.m */; };
@@ -238,6 +241,11 @@
 		F18FF79C1DF11EF800D64248 /* ActIssueDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActIssueDetialViewController.h; sourceTree = "<group>"; };
 		F18FF79D1DF11EF800D64248 /* ActIssueDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActIssueDetialViewController.m; sourceTree = "<group>"; };
 		F18FF79E1DF11EF800D64248 /* ActIssueDetialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActIssueDetialViewController.xib; sourceTree = "<group>"; };
+		F199C4731E2475DF00DF1C62 /* FourDetialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourDetialModel.h; sourceTree = "<group>"; };
+		F199C4741E2475DF00DF1C62 /* FourDetialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourDetialModel.m; sourceTree = "<group>"; };
+		F199C4761E247ACB00DF1C62 /* FourBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourBasicViewController.h; sourceTree = "<group>"; };
+		F199C4771E247ACB00DF1C62 /* FourBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourBasicViewController.m; sourceTree = "<group>"; };
+		F199C4781E247ACB00DF1C62 /* FourBasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourBasicViewController.xib; sourceTree = "<group>"; };
 		F1A32CAA1DEFF5B700EEE274 /* ActIssueSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActIssueSearchViewController.h; sourceTree = "<group>"; };
 		F1A32CAB1DEFF5B700EEE274 /* ActIssueSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActIssueSearchViewController.m; sourceTree = "<group>"; };
 		F1A32CAC1DEFF5B700EEE274 /* ActIssueSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActIssueSearchViewController.xib; sourceTree = "<group>"; };
@@ -1234,6 +1242,9 @@
 				F1ED64EE1DEC0FDF00FFD4C8 /* FourViewController.m */,
 				3BF32CE81E08FCB20015C0BE /* FourDetialViewController.h */,
 				3BF32CE91E08FCB20015C0BE /* FourDetialViewController.m */,
+				F199C4761E247ACB00DF1C62 /* FourBasicViewController.h */,
+				F199C4771E247ACB00DF1C62 /* FourBasicViewController.m */,
+				F199C4781E247ACB00DF1C62 /* FourBasicViewController.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1243,6 +1254,8 @@
 			children = (
 				F1FC3AB81DF53CF8004B413C /* FourModel.h */,
 				F1FC3AB91DF53CF8004B413C /* FourModel.m */,
+				F199C4731E2475DF00DF1C62 /* FourDetialModel.h */,
+				F199C4741E2475DF00DF1C62 /* FourDetialModel.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -1521,6 +1534,7 @@
 				23CB26671DF44A5600BA5889 /* b27_icon_star_gray@2x.png in Resources */,
 				F1A32CAE1DEFF5B700EEE274 /* ActIssueSearchViewController.xib in Resources */,
 				237D22501DF427EC00FC1B47 /* MoreViewController.xib in Resources */,
+				F199C47A1E247ACB00DF1C62 /* FourBasicViewController.xib in Resources */,
 				F1A33BCD1DED1558007E6F2E /* ActSearchTableViewCell.xib in Resources */,
 				F1AD12A01E08C1F300BE0DC0 /* UserInfoViewController.xib in Resources */,
 				F1FC3ABF1DF53EAD004B413C /* FoueTableViewCell.xib in Resources */,
@@ -1737,6 +1751,7 @@
 				3BF32CC81E08D0A40015C0BE /* CompanyBasicController.m in Sources */,
 				3B343BB31DED63CE00474549 /* UserInfoManager.m in Sources */,
 				237D22121DF4249700FC1B47 /* CloudTableViewCell.m in Sources */,
+				F199C4751E2475DF00DF1C62 /* FourDetialModel.m in Sources */,
 				F1BF5B4B1DEAA8C5006AA3BA /* RootNavgationController.m in Sources */,
 				3BF32CCB1E08D0A40015C0BE /* CompanyProductsController.m in Sources */,
 				F1A634B01DF94D8600CA6BBE /* JAJSetViewController.m in Sources */,
@@ -1767,6 +1782,7 @@
 				237D223B1DF4275900FC1B47 /* SalesReportViewController.m in Sources */,
 				3B343BA61DED4FD400474549 /* LoginViewController.m in Sources */,
 				3BF32CCD1E08D0A40015C0BE /* CompanyProductModel.m in Sources */,
+				F199C4791E247ACB00DF1C62 /* FourBasicViewController.m in Sources */,
 				F1ED65171DEC0FDF00FFD4C8 /* HomeViewController.m in Sources */,
 				3BF32CD21E08D0A40015C0BE /* YLZGTitleLabel.m in Sources */,
 				F1A32CAD1DEFF5B700EEE274 /* ActIssueSearchViewController.m in Sources */,

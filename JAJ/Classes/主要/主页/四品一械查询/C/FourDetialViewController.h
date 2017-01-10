@@ -8,9 +8,12 @@
 
 #import "SuperViewController.h"
 #import "FourModel.h"
+#import "FourBasicViewController.h"
 
-@interface FourDetialViewController : SuperViewController
+@interface FourDetialViewController : SuperViewController<UIScrollViewDelegate,UIViewControllerTransitioningDelegate>
 
 @property (strong,nonatomic) FourModel *fourModel;
+
+
 
 @end

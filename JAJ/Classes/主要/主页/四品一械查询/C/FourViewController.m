@@ -13,6 +13,7 @@
 #import "FourDetialViewController.h"
 #import "FoueTableViewCell.h"
 #import "FourModel.h"
+#import "FourBasicViewController.h"
 
 @interface FourViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
 

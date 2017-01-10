@@ -159,6 +159,8 @@
     
     NSString *string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
     string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\r\n" withString:@""];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
