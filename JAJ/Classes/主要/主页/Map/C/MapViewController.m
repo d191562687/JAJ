@@ -23,6 +23,9 @@
 @property (nonatomic, strong)NSMutableArray *pointArray;
 /** 导航按钮 */
 @property (strong,nonatomic) UIButton * buttonMap;
+///地理编码器
+@property(nonatomic, strong)CLGeocoder *geocoder;
+
 @end
 
 @implementation MapViewController
@@ -33,6 +36,21 @@
     }
     return _pointArray;
 }
+- (CLLocationManager *)locationManager
+{
+    if (!_locationManager) {
+        _locationManager = [[CLLocationManager alloc]init];
+    }
+    return _locationManager;
+}
+- (CLGeocoder *)geocoder
+{
+    if (!_geocoder) {
+        _geocoder = [[CLGeocoder alloc]init];
+    }
+    return _geocoder;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -118,43 +136,72 @@
     }
     return _mapView;
 }
-
+/** 导航 */
 - (void)setMapData
 {
-
-    //导航到...
-    self.coordinate = CLLocationCoordinate2DMake(39.915168,116.403875);
     
-    if (IS_SystemVersionGreaterThanEight) {
+    //1. 申请授权
+    [self.locationManager requestAlwaysAuthorization];
+    
+    //2. 设置导航参数
+    NSMutableDictionary *dicM = [NSMutableDictionary dictionary];
+    ///字典中的value不能是基本数据类型?
+    dicM[MKLaunchOptionsShowsTrafficKey] = @YES;
+    dicM[MKLaunchOptionsDirectionsModeKey] = MKLaunchOptionsDirectionsModeDriving;
+    //3.获得当前位置
+    MKMapItem *item1 = [MKMapItem mapItemForCurrentLocation];
+    
+    //4. 地理解码
+    [self.geocoder geocodeAddressString:@"故宫" completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         
-        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"导航到设备" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-        //自带地图
-        [alertController addAction:[UIAlertAction actionWithTitle:@"自带地图" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            
-            NSLog(@"alertController -- 自带地图");
-            
-            //使用自带地图导航
-            MKMapItem *currentLocation =[MKMapItem mapItemForCurrentLocation];
-            
-            MKMapItem *toLocation = [[MKMapItem alloc] initWithPlacemark:[[MKPlacemark alloc] initWithCoordinate:self.coordinate addressDictionary:nil]];
-            
-            [MKMapItem openMapsWithItems:@[currentLocation,toLocation] launchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving,
-                                                                                       MKLaunchOptionsShowsTrafficKey:[NSNumber numberWithBool:YES]}];
-            
-            
-        }]];
-    }
+        ///从字典中拿出地点信息
+        CLPlacemark *place = placemarks.firstObject;
+        ///转化成MKPlacemark
+        MKPlacemark *placemark = [[MKPlacemark alloc]initWithPlacemark:place];
+        
+        ///创建终点
+        MKMapItem *item2 = [[MKMapItem alloc] initWithPlacemark:placemark];
+        
+        ///进行导航
+        [MKMapItem openMapsWithItems:@[item1, item2] launchOptions:dicM];
+    }];
+
     
     
-    NSLog(@"自带地图触发了");
-    
-    MKMapItem *currentLocation =[MKMapItem mapItemForCurrentLocation];
-    
-    MKMapItem *toLocation = [[MKMapItem alloc] initWithPlacemark:[[MKPlacemark alloc] initWithCoordinate:self.coordinate addressDictionary:nil]];
-    
-    [MKMapItem openMapsWithItems:@[currentLocation,toLocation] launchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving,
-                                                                               MKLaunchOptionsShowsTrafficKey:[NSNumber numberWithBool:YES]}];
-    
+//
+//    //导航到...
+//    self.coordinate = CLLocationCoordinate2DMake(39.915168,116.403875);
+//    
+//    if (IS_SystemVersionGreaterThanEight) {
+//        
+//        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"导航到设备" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+//        //自带地图
+//        [alertController addAction:[UIAlertAction actionWithTitle:@"自带地图" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//            
+//            NSLog(@"alertController -- 自带地图");
+//            
+//            //使用自带地图导航
+//            MKMapItem *currentLocation =[MKMapItem mapItemForCurrentLocation];
+//            
+//            MKMapItem *toLocation = [[MKMapItem alloc] initWithPlacemark:[[MKPlacemark alloc] initWithCoordinate:self.coordinate addressDictionary:nil]];
+//            
+//            [MKMapItem openMapsWithItems:@[currentLocation,toLocation] launchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving,
+//                                                                                       MKLaunchOptionsShowsTrafficKey:[NSNumber numberWithBool:YES]}];
+//            
+//            
+//        }]];
+//    }
+//    
+//    
+//    NSLog(@"自带地图触发了");
+//    
+//    MKMapItem *currentLocation =[MKMapItem mapItemForCurrentLocation];
+//    
+//    MKMapItem *toLocation = [[MKMapItem alloc] initWithPlacemark:[[MKPlacemark alloc] initWithCoordinate:self.coordinate addressDictionary:nil]];
+//    
+//    [MKMapItem openMapsWithItems:@[currentLocation,toLocation] launchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving,
+//                                                                               MKLaunchOptionsShowsTrafficKey:[NSNumber numberWithBool:YES]}];
+//    
     
 }
 
