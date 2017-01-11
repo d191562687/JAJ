@@ -54,7 +54,7 @@
     NSCharacterSet *set = [NSCharacterSet URLQueryAllowedCharacterSet];
     NSString *URL = [url stringByAddingPercentEncodingWithAllowedCharacters:set];
     [manager POST:URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
- 
+        
         id dic = [HTTPManager responseConfiguration:responseObject];
         
         success(task,dic);
@@ -164,6 +164,11 @@
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
+    
+//    NSLog(@"--string----%@",string);
+//    NSLog(@"--data----%@",data);
+//    NSLog(@"--dic----%@",dic);
+     
     if (error) {
         return error.localizedDescription;
     }else{

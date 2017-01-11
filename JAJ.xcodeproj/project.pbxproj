@@ -118,6 +118,11 @@
 		F1DA22871DF00B8C00743904 /* ActIssueSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DA22851DF00B8C00743904 /* ActIssueSearchTableViewCell.m */; };
 		F1DA22881DF00B8C00743904 /* ActIssueSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DA22861DF00B8C00743904 /* ActIssueSearchTableViewCell.xib */; };
 		F1DA228B1DF0119E00743904 /* ActIssueSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DA228A1DF0119E00743904 /* ActIssueSearchModel.m */; };
+		F1E25C9B1E2621B800AF542C /* RightSlidetabletableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E25C941E2621B800AF542C /* RightSlidetabletableViewCell.m */; };
+		F1E25C9C1E2621B800AF542C /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E25C961E2621B800AF542C /* TimeModel.m */; };
+		F1E25C9D1E2621B800AF542C /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E25C981E2621B800AF542C /* UITableView+SDAutoTableViewCellHeight.m */; };
+		F1E25C9E1E2621B800AF542C /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E25C9A1E2621B800AF542C /* UIView+SDAutoLayout.m */; };
+		F1E25CA11E26237B00AF542C /* BackDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E25CA01E26237B00AF542C /* BackDetailsViewController.m */; };
 		F1E5B9771E0A2FFE00AE75E8 /* viewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B9761E0A2FFE00AE75E8 /* viewFrame.m */; };
 		F1E5B97A1E0A30E500AE75E8 /* Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B9791E0A30E500AE75E8 /* Calendar.m */; };
 		F1ED650F1DEC0FDF00FFD4C8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED64DA1DEC0FDF00FFD4C8 /* MapViewController.m */; };
@@ -357,6 +362,16 @@
 		F1DA22861DF00B8C00743904 /* ActIssueSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActIssueSearchTableViewCell.xib; sourceTree = "<group>"; };
 		F1DA22891DF0119E00743904 /* ActIssueSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActIssueSearchModel.h; sourceTree = "<group>"; };
 		F1DA228A1DF0119E00743904 /* ActIssueSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActIssueSearchModel.m; sourceTree = "<group>"; };
+		F1E25C931E2621B800AF542C /* RightSlidetabletableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightSlidetabletableViewCell.h; sourceTree = "<group>"; };
+		F1E25C941E2621B800AF542C /* RightSlidetabletableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightSlidetabletableViewCell.m; sourceTree = "<group>"; };
+		F1E25C951E2621B800AF542C /* TimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
+		F1E25C961E2621B800AF542C /* TimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
+		F1E25C971E2621B800AF542C /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		F1E25C981E2621B800AF542C /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		F1E25C991E2621B800AF542C /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		F1E25C9A1E2621B800AF542C /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		F1E25C9F1E26237B00AF542C /* BackDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackDetailsViewController.h; sourceTree = "<group>"; };
+		F1E25CA01E26237B00AF542C /* BackDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackDetailsViewController.m; sourceTree = "<group>"; };
 		F1E5B9751E0A2FFE00AE75E8 /* viewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewFrame.h; path = "JAJ/Classes/主要/我/C/viewFrame.h"; sourceTree = SOURCE_ROOT; };
 		F1E5B9761E0A2FFE00AE75E8 /* viewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = viewFrame.m; path = "JAJ/Classes/主要/我/C/viewFrame.m"; sourceTree = SOURCE_ROOT; };
 		F1E5B9781E0A30E500AE75E8 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Calendar.h; path = "JAJ/Classes/主要/我/C/Calendar.h"; sourceTree = SOURCE_ROOT; };
@@ -982,7 +997,7 @@
 		F1BF5B461DEAA89D006AA3BA /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				F1BF5B541DEAAB6F006AA3BA /* 其他 */,
+				F1E25C921E2621B800AF542C /* 四品一械追溯时间轴 */,
 				F1BF5B551DEAAB6F006AA3BA /* 延展 */,
 			);
 			path = Others;
@@ -998,13 +1013,6 @@
 				F1BF5B511DEAAAA7006AA3BA /* JAJConstKey.m */,
 			);
 			path = PCH;
-			sourceTree = "<group>";
-		};
-		F1BF5B541DEAAB6F006AA3BA /* 其他 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "其他";
 			sourceTree = "<group>";
 		};
 		F1BF5B551DEAAB6F006AA3BA /* 延展 */ = {
@@ -1150,6 +1158,21 @@
 			path = PageControl;
 			sourceTree = "<group>";
 		};
+		F1E25C921E2621B800AF542C /* 四品一械追溯时间轴 */ = {
+			isa = PBXGroup;
+			children = (
+				F1E25C931E2621B800AF542C /* RightSlidetabletableViewCell.h */,
+				F1E25C941E2621B800AF542C /* RightSlidetabletableViewCell.m */,
+				F1E25C951E2621B800AF542C /* TimeModel.h */,
+				F1E25C961E2621B800AF542C /* TimeModel.m */,
+				F1E25C971E2621B800AF542C /* UITableView+SDAutoTableViewCellHeight.h */,
+				F1E25C981E2621B800AF542C /* UITableView+SDAutoTableViewCellHeight.m */,
+				F1E25C991E2621B800AF542C /* UIView+SDAutoLayout.h */,
+				F1E25C9A1E2621B800AF542C /* UIView+SDAutoLayout.m */,
+			);
+			path = "四品一械追溯时间轴";
+			sourceTree = "<group>";
+		};
 		F1ED64D61DEC0FDF00FFD4C8 /* 主页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1286,6 +1309,8 @@
 				F1AE57201DF641EF007515F3 /* BackViewController.h */,
 				F1AE57211DF641EF007515F3 /* BackViewController.m */,
 				F1AE57221DF641EF007515F3 /* BackViewController.xib */,
+				F1E25C9F1E26237B00AF542C /* BackDetailsViewController.h */,
+				F1E25CA01E26237B00AF542C /* BackDetailsViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1710,6 +1735,7 @@
 				F1A9F6811DF793DE00F211AF /* TipsModel.m in Sources */,
 				F1BF5B051DEA9283006AA3BA /* main.m in Sources */,
 				F1BF5BB01DEAC9DE006AA3BA /* TAPageControl.m in Sources */,
+				F1E25C9D1E2621B800AF542C /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				F1BF5B641DEAAB6F006AA3BA /* NSString+StrCategory.m in Sources */,
 				F1BF5B481DEAA89D006AA3BA /* SuperViewController.m in Sources */,
 				F1BF5B981DEAC3D5006AA3BA /* LimiteCache.m in Sources */,
@@ -1717,7 +1743,9 @@
 				F1BF5B621DEAAB6F006AA3BA /* NSDate+Category.m in Sources */,
 				F1DA22871DF00B8C00743904 /* ActIssueSearchTableViewCell.m in Sources */,
 				3BF32CC91E08D0A40015C0BE /* CompanyContactController.m in Sources */,
+				F1E25C9C1E2621B800AF542C /* TimeModel.m in Sources */,
 				F1A634A61DF94D2900CA6BBE /* FeedBackViewController.m in Sources */,
+				F1E25CA11E26237B00AF542C /* BackDetailsViewController.m in Sources */,
 				3B213F4D1DFEA0800088728C /* RegisterViewController.m in Sources */,
 				F1A33BC81DED0F74007E6F2E /* ActSearchViewModel.m in Sources */,
 				F1ED651C1DEC0FDF00FFD4C8 /* NormalCollectionViewCell.m in Sources */,
@@ -1771,6 +1799,7 @@
 				F15016021DEE5E2300485537 /* ActSearchDetialViewController.m in Sources */,
 				237D22451DF427B800FC1B47 /* CommentViewController.m in Sources */,
 				F1BF5B881DEABB8A006AA3BA /* NormalTableViewCell.m in Sources */,
+				F1E25C9E1E2621B800AF542C /* UIView+SDAutoLayout.m in Sources */,
 				F1BF5BB11DEAC9DE006AA3BA /* SDCollectionViewCell.m in Sources */,
 				F1BF5B631DEAAB6F006AA3BA /* NSDate+Extension.m in Sources */,
 				F1BF5BAE1DEAC9DE006AA3BA /* TAAnimatedDotView.m in Sources */,
@@ -1779,6 +1808,7 @@
 				3BF32CCC1E08D0A40015C0BE /* CompanyViewController.m in Sources */,
 				F1BF5B691DEAABBA006AA3BA /* NSDateFormatter+Category.m in Sources */,
 				237D224F1DF427EC00FC1B47 /* MoreViewController.m in Sources */,
+				F1E25C9B1E2621B800AF542C /* RightSlidetabletableViewCell.m in Sources */,
 				237D223B1DF4275900FC1B47 /* SalesReportViewController.m in Sources */,
 				3B343BA61DED4FD400474549 /* LoginViewController.m in Sources */,
 				3BF32CCD1E08D0A40015C0BE /* CompanyProductModel.m in Sources */,
