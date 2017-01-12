@@ -10,8 +10,6 @@
 #import "Calendar.h"
 #import "UserInfoManager.h"
 
-
-
 @interface SignViewController ()
 /** 签到天数 */
 @property (strong, nonatomic) IBOutlet UILabel *day;
