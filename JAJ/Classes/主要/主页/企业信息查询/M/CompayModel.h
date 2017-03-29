@@ -11,12 +11,12 @@
 
 @interface CompayModel : NSObject
 /** 企业ID */
-@property (strong,nonatomic) NSString * ID;
+@property (strong,nonatomic) NSString * id;
 /** 企业类型 -- 1是生产企业 2是经营企业 */
-@property (copy,nonatomic) NSString *QY;
+@property (copy,nonatomic) NSString * qy;
 /** 企业名称  */
-@property (strong,nonatomic) NSString * QYMC;
-/** 企业编号 */
-@property (strong,nonatomic) NSString * ROW_ID;
+@property (strong,nonatomic) NSString * qymc;
+///** 企业编号 */
+//@property (strong,nonatomic) NSString * ROW_ID;
 
 @end

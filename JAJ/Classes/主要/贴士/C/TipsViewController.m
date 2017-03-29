@@ -124,12 +124,12 @@
 #pragma mark - 获取数据
 - (void)getData:(NSString *)type
 {
-    NSString *url = [NSString stringWithFormat:@"%@%@",ip_port,appShiyts_URL];
+    NSString *url = [NSString stringWithFormat:@"http://192.168.1.235:8180/syaq-manager-web/appSyts/appSyts/list"];
   
     NSDictionary *params = @{
                              @"type":type,
                              @"currentPage":@"1",
-                             @"pageSize":@"20"
+                             @"pageSize":@"10"
                              };
     
     NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
@@ -138,24 +138,29 @@
     [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
         [self.tableView.mj_header endRefreshing];
         
-        //     NSLog(@"responseObject = %@",responseObject);
+//        NSLog(@"responseObject1 = %@",responseObject);
+//        NSString *name = [responseObject className];
+//        NSLog(@"responseObjectName = %@",name);
+        
         NSString *code = [[responseObject objectForKey:@"code"] description];
         NSString *desc = [[responseObject objectForKey:@"desc"] description];
+
         if ([code isEqualToString:@"0000"]) {
-            // 成功
+//             成功
             NSArray *data = [responseObject objectForKey:@"data"];
             self.tipsArray = [HomeListModel mj_objectArrayWithKeyValuesArray:data];
-            
+//            NSLog(@"self.tipsArray = %@",self.tipsArray);
             [self.tableView reloadData];
-
-        }else{
+            NSLog(@"数据成功");
+        }
+     else{
             // 不成功
             [self sendAlertAction:desc];
         }
-        
     } fail:^(NSURLSessionDataTask *task, NSError *error) {
         [self.tableView.mj_header endRefreshing];
         [self sendAlertAction:error.localizedDescription];
+        NSLog(@"数据错误");
     }];
  
 }

@@ -22,6 +22,7 @@
 #import "EditionViewController.h"
 #import "JAJSetViewController.h"
 #import "ChangePassWordViewController.h"
+#import "WoSetViewController.h"
 
 @interface WoViewController ()<UITableViewDelegate,UITableViewDataSource>
 /** 表格 */
@@ -154,7 +155,7 @@
         }else if (indexPath.row == 4){
            
             // 设置
-            JAJSetViewController * jajsetVC = [JAJSetViewController new];
+             WoSetViewController * jajsetVC = [WoSetViewController new];
             [self.navigationController pushViewController:jajsetVC animated:YES];
             
         }

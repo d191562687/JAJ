@@ -56,7 +56,7 @@
     [manager POST:URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         id dic = [HTTPManager responseConfiguration:responseObject];
-        
+
         success(task,dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         fail(task,error);
@@ -149,7 +149,7 @@
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     //如果报接受类型不一致请替换一致text/html或别的
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript",@"json/text", nil];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript",@"json/text", @"text/plain",nil];
     [manager.requestSerializer setTimeoutInterval:10.0];
     manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     
@@ -168,7 +168,7 @@
 //    NSLog(@"--string----%@",string);
 //    NSLog(@"--data----%@",data);
 //    NSLog(@"--dic----%@",dic);
-     
+    
     if (error) {
         return error.localizedDescription;
     }else{

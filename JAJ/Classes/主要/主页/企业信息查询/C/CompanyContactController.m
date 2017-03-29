@@ -32,11 +32,11 @@
  */
 - (void)getCompanyInfoWithType:(int)InfoType
 {
-    NSString *url = [NSString stringWithFormat:@"%@%@",ip_port,appCjXQ_URL];
+    NSString *url = [NSString stringWithFormat:@"%@%@",ip_port,appCjXQ_URL];   
     NSMutableDictionary *jsonDict = [NSMutableDictionary dictionary];
-    [jsonDict setValue:self.model.QYMC forKey:@"QYMC"];
-    [jsonDict setValue:self.model.QY forKey:@"QY"];
-    [jsonDict setValue:self.model.ID forKey:@"ID"];
+    [jsonDict setValue:self.model.qymc forKey:@"qymc"];
+    [jsonDict setValue:self.model.qy forKey:@"qy"];
+    [jsonDict setValue:self.model.id forKey:@"id"];
     [jsonDict setValue:[NSString stringWithFormat:@"%d",InfoType] forKey:@"type"];
     
     NSDictionary *params = @{@"json":[self switchToJsonStrFrom:jsonDict]};

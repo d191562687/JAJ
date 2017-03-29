@@ -51,6 +51,11 @@
 		D1BD50CB8F0650C1B3928DF4 /* libPods-JAJTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F275175999E426096B5E6B4C /* libPods-JAJTests.a */; };
 		F15016021DEE5E2300485537 /* ActSearchDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15016001DEE5E2300485537 /* ActSearchDetialViewController.m */; };
 		F15016031DEE5E2300485537 /* ActSearchDetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15016011DEE5E2300485537 /* ActSearchDetialViewController.xib */; };
+		F177E9611E2726A100E3300B /* ZFBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F177E9581E2726A100E3300B /* ZFBaseSettingViewController.m */; };
+		F177E9621E2726A100E3300B /* ZFSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F177E95B1E2726A100E3300B /* ZFSettingGroup.m */; };
+		F177E9631E2726A100E3300B /* ZFSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F177E95D1E2726A100E3300B /* ZFSettingItem.m */; };
+		F177E9641E2726A100E3300B /* ZFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F177E9601E2726A100E3300B /* ZFSettingCell.m */; };
+		F177E9671E27270F00E3300B /* WoSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F177E9661E27270F00E3300B /* WoSetViewController.m */; };
 		F17B2F2A1DF6BE11005DB3E4 /* TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17B2F281DF6BE11005DB3E4 /* TipsViewController.m */; };
 		F17B2F2B1DF6BE11005DB3E4 /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17B2F291DF6BE11005DB3E4 /* TipsViewController.xib */; };
 		F18FF79F1DF11EF800D64248 /* ActIssueDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18FF79D1DF11EF800D64248 /* ActIssueDetialViewController.m */; };
@@ -240,6 +245,16 @@
 		F15016001DEE5E2300485537 /* ActSearchDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActSearchDetialViewController.m; sourceTree = "<group>"; };
 		F15016011DEE5E2300485537 /* ActSearchDetialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActSearchDetialViewController.xib; sourceTree = "<group>"; };
 		F15016041DEE7E9900485537 /* PCH_HTTP_URL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCH_HTTP_URL.h; sourceTree = "<group>"; };
+		F177E9571E2726A100E3300B /* ZFBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBaseSettingViewController.h; sourceTree = "<group>"; };
+		F177E9581E2726A100E3300B /* ZFBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBaseSettingViewController.m; sourceTree = "<group>"; };
+		F177E95A1E2726A100E3300B /* ZFSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingGroup.h; sourceTree = "<group>"; };
+		F177E95B1E2726A100E3300B /* ZFSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSettingGroup.m; sourceTree = "<group>"; };
+		F177E95C1E2726A100E3300B /* ZFSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingItem.h; sourceTree = "<group>"; };
+		F177E95D1E2726A100E3300B /* ZFSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSettingItem.m; sourceTree = "<group>"; };
+		F177E95F1E2726A100E3300B /* ZFSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingCell.h; sourceTree = "<group>"; };
+		F177E9601E2726A100E3300B /* ZFSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSettingCell.m; sourceTree = "<group>"; };
+		F177E9651E27270F00E3300B /* WoSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoSetViewController.h; sourceTree = "<group>"; };
+		F177E9661E27270F00E3300B /* WoSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoSetViewController.m; sourceTree = "<group>"; };
 		F17B2F271DF6BE11005DB3E4 /* TipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsViewController.h; sourceTree = "<group>"; };
 		F17B2F281DF6BE11005DB3E4 /* TipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsViewController.m; sourceTree = "<group>"; };
 		F17B2F291DF6BE11005DB3E4 /* TipsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipsViewController.xib; sourceTree = "<group>"; };
@@ -301,7 +316,7 @@
 		F1BF5B2A1DEA9283006AA3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1BF5B421DEAA89D006AA3BA /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
 		F1BF5B431DEAA89D006AA3BA /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
-		F1BF5B491DEAA8C5006AA3BA /* RootNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavgationController.h; sourceTree = "<group>"; };
+		F1BF5B491DEAA8C5006AA3BA /* RootNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootNavgationController.h; path = "../基类/RootNavgationController.h"; sourceTree = "<group>"; };
 		F1BF5B4A1DEAA8C5006AA3BA /* RootNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavgationController.m; sourceTree = "<group>"; };
 		F1BF5B4C1DEAA9D7006AA3BA /* RootTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabbarController.h; sourceTree = "<group>"; };
 		F1BF5B4D1DEAA9D7006AA3BA /* RootTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabbarController.m; sourceTree = "<group>"; };
@@ -840,6 +855,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F177E9551E2726A100E3300B /* ZFSetting */ = {
+			isa = PBXGroup;
+			children = (
+				F177E9561E2726A100E3300B /* Controller */,
+				F177E9591E2726A100E3300B /* Model */,
+				F177E95E1E2726A100E3300B /* View */,
+			);
+			path = ZFSetting;
+			sourceTree = "<group>";
+		};
+		F177E9561E2726A100E3300B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F177E9571E2726A100E3300B /* ZFBaseSettingViewController.h */,
+				F177E9581E2726A100E3300B /* ZFBaseSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F177E9591E2726A100E3300B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F177E95A1E2726A100E3300B /* ZFSettingGroup.h */,
+				F177E95B1E2726A100E3300B /* ZFSettingGroup.m */,
+				F177E95C1E2726A100E3300B /* ZFSettingItem.h */,
+				F177E95D1E2726A100E3300B /* ZFSettingItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F177E95E1E2726A100E3300B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F177E95F1E2726A100E3300B /* ZFSettingCell.h */,
+				F177E9601E2726A100E3300B /* ZFSettingCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F17B2F231DF6BDD5005DB3E4 /* 贴士 */ = {
 			isa = PBXGroup;
 			children = (
@@ -968,7 +1022,6 @@
 				F1BF5B431DEAA89D006AA3BA /* SuperViewController.m */,
 				F1BF5B4C1DEAA9D7006AA3BA /* RootTabbarController.h */,
 				F1BF5B4D1DEAA9D7006AA3BA /* RootTabbarController.m */,
-				F1BF5B491DEAA8C5006AA3BA /* RootNavgationController.h */,
 				F1BF5B4A1DEAA8C5006AA3BA /* RootNavgationController.m */,
 			);
 			path = "基类";
@@ -997,6 +1050,8 @@
 		F1BF5B461DEAA89D006AA3BA /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				F1BF5B491DEAA8C5006AA3BA /* RootNavgationController.h */,
+				F177E9551E2726A100E3300B /* ZFSetting */,
 				F1E25C921E2621B800AF542C /* 四品一械追溯时间轴 */,
 				F1BF5B551DEAAB6F006AA3BA /* 延展 */,
 			);
@@ -1089,6 +1144,8 @@
 				F1A634AD1DF94D8600CA6BBE /* JAJSetViewController.h */,
 				F1A634AE1DF94D8600CA6BBE /* JAJSetViewController.m */,
 				F1A634AF1DF94D8600CA6BBE /* JAJSetViewController.xib */,
+				F177E9651E27270F00E3300B /* WoSetViewController.h */,
+				F177E9661E27270F00E3300B /* WoSetViewController.m */,
 				F1D18FB81E07B3360032A028 /* ChangePassWordViewController.h */,
 				F1D18FB91E07B3360032A028 /* ChangePassWordViewController.m */,
 				F1D18FBA1E07B3360032A028 /* ChangePassWordViewController.xib */,
@@ -1736,6 +1793,7 @@
 				F1BF5B051DEA9283006AA3BA /* main.m in Sources */,
 				F1BF5BB01DEAC9DE006AA3BA /* TAPageControl.m in Sources */,
 				F1E25C9D1E2621B800AF542C /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				F177E9631E2726A100E3300B /* ZFSettingItem.m in Sources */,
 				F1BF5B641DEAAB6F006AA3BA /* NSString+StrCategory.m in Sources */,
 				F1BF5B481DEAA89D006AA3BA /* SuperViewController.m in Sources */,
 				F1BF5B981DEAC3D5006AA3BA /* LimiteCache.m in Sources */,
@@ -1760,11 +1818,13 @@
 				F1BF5B661DEAAB6F006AA3BA /* UIView+Extension.m in Sources */,
 				F1D18FBB1E07B3360032A028 /* ChangePassWordViewController.m in Sources */,
 				3BF32CCA1E08D0A40015C0BE /* CompanyDetialController.m in Sources */,
+				F177E9641E2726A100E3300B /* ZFSettingCell.m in Sources */,
 				3B343BB61DED66EC00474549 /* ClearCacheTool.m in Sources */,
 				F18FF79F1DF11EF800D64248 /* ActIssueDetialViewController.m in Sources */,
 				237D225E1DF4295600FC1B47 /* MarketquotationViewController.m in Sources */,
 				F1BF5B651DEAAB6F006AA3BA /* UIBarButtonItem+Extension.m in Sources */,
 				F1E5B9771E0A2FFE00AE75E8 /* viewFrame.m in Sources */,
+				F177E9611E2726A100E3300B /* ZFBaseSettingViewController.m in Sources */,
 				F1BF5B521DEAAAA7006AA3BA /* JAJConstKey.m in Sources */,
 				237D22361DF4272500FC1B47 /* CloudKnowViewController.m in Sources */,
 				F1B555E21DF909D900EDB764 /* FoodTableViewCell.m in Sources */,
@@ -1776,6 +1836,7 @@
 				F1ED65191DEC0FDF00FFD4C8 /* HangyeListTableCell.m in Sources */,
 				F17B2F2A1DF6BE11005DB3E4 /* TipsViewController.m in Sources */,
 				F1AE57231DF641EF007515F3 /* BackViewController.m in Sources */,
+				F177E9621E2726A100E3300B /* ZFSettingGroup.m in Sources */,
 				3BF32CC81E08D0A40015C0BE /* CompanyBasicController.m in Sources */,
 				3B343BB31DED63CE00474549 /* UserInfoManager.m in Sources */,
 				237D22121DF4249700FC1B47 /* CloudTableViewCell.m in Sources */,
@@ -1803,6 +1864,7 @@
 				F1BF5BB11DEAC9DE006AA3BA /* SDCollectionViewCell.m in Sources */,
 				F1BF5B631DEAAB6F006AA3BA /* NSDate+Extension.m in Sources */,
 				F1BF5BAE1DEAC9DE006AA3BA /* TAAnimatedDotView.m in Sources */,
+				F177E9671E27270F00E3300B /* WoSetViewController.m in Sources */,
 				F1ED65151DEC0FDF00FFD4C8 /* ActivityViewController.m in Sources */,
 				F1BF5BB21DEAC9DE006AA3BA /* SDCycleScrollView.m in Sources */,
 				3BF32CCC1E08D0A40015C0BE /* CompanyViewController.m in Sources */,

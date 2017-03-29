@@ -14,4 +14,4 @@
 
 /************* NSUserDefault 关键字 **************/
 NSString *const UDTipsDetailed = @"UDTipsDetailed";
-NSString *const UDmap = @"UDmap";
+NSString *const UDmap = @"UDmap";  //存储地图坐标

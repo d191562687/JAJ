@@ -131,9 +131,9 @@
     // http://localhost:8080/SYAQ/appCjcx/cjcxXQ.do?
     NSString *url = [NSString stringWithFormat:@"%@%@",ip_port,appCjXQ_URL];
     NSMutableDictionary *jsonDict = [NSMutableDictionary dictionary];
-    [jsonDict setValue:self.model.QYMC forKey:@"QYMC"];
-    [jsonDict setValue:self.model.QY forKey:@"QY"];
-    [jsonDict setValue:self.model.ID forKey:@"ID"];
+    [jsonDict setValue:self.model.qymc forKey:@"qymc"];
+    [jsonDict setValue:self.model.qy forKey:@"qy"];
+    [jsonDict setValue:self.model.id forKey:@"id"];
     [jsonDict setValue:[NSString stringWithFormat:@"%ld",(long)type] forKey:@"type"];
     [jsonDict setValue:currentPage forKey:@"currentPage"];
     [jsonDict setValue:pageSize forKey:@"pageSize"];

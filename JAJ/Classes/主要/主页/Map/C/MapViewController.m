@@ -63,7 +63,7 @@
     [self setlocationManager];
     
 }
-
+//设置定位服务
 - (void)setlocationManager
 {
     //初始化locationManger管理器对象
@@ -92,7 +92,7 @@
     locationManager.delegate=self;
     //设置定位的精度
     locationManager.desiredAccuracy=kCLLocationAccuracyBest;
-    //设置定位的频率,这里我们设置精度为10,也就是10米定位一次
+    //设置定位的频率,这里我们设置精度为100,也就是100米定位一次
     CLLocationDistance distance= 100;
     //给精度赋值
     locationManager.distanceFilter=distance;
@@ -101,7 +101,7 @@
  
 }
 
-//当位置发生改变的时候调用(上面我们设置的是10米,也就是当位置发生>10米的时候该代理方法就会调用)
+//当位置发生改变的时候调用(上面我们设置的是100米,也就是当位置发生>100米的时候该代理方法就会调用)
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
     //取出第一个位置
     CLLocation *location=[locations firstObject];
@@ -165,44 +165,6 @@
         ///进行导航
         [MKMapItem openMapsWithItems:@[item1, item2] launchOptions:dicM];
     }];
-
-    
-    
-//
-//    //导航到...
-//    self.coordinate = CLLocationCoordinate2DMake(39.915168,116.403875);
-//    
-//    if (IS_SystemVersionGreaterThanEight) {
-//        
-//        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"导航到设备" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-//        //自带地图
-//        [alertController addAction:[UIAlertAction actionWithTitle:@"自带地图" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//            
-//            NSLog(@"alertController -- 自带地图");
-//            
-//            //使用自带地图导航
-//            MKMapItem *currentLocation =[MKMapItem mapItemForCurrentLocation];
-//            
-//            MKMapItem *toLocation = [[MKMapItem alloc] initWithPlacemark:[[MKPlacemark alloc] initWithCoordinate:self.coordinate addressDictionary:nil]];
-//            
-//            [MKMapItem openMapsWithItems:@[currentLocation,toLocation] launchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving,
-//                                                                                       MKLaunchOptionsShowsTrafficKey:[NSNumber numberWithBool:YES]}];
-//            
-//            
-//        }]];
-//    }
-//    
-//    
-//    NSLog(@"自带地图触发了");
-//    
-//    MKMapItem *currentLocation =[MKMapItem mapItemForCurrentLocation];
-//    
-//    MKMapItem *toLocation = [[MKMapItem alloc] initWithPlacemark:[[MKPlacemark alloc] initWithCoordinate:self.coordinate addressDictionary:nil]];
-//    
-//    [MKMapItem openMapsWithItems:@[currentLocation,toLocation] launchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving,
-//                                                                               MKLaunchOptionsShowsTrafficKey:[NSNumber numberWithBool:YES]}];
-//    
-    
 }
 
 /** 数据请求 */
@@ -217,7 +179,7 @@
                              };
     NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
     NSDictionary *json = @{@"json":p1Str};
-    
+    NSLog(@"----json------%@",json);
     [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"responseObject = %@",responseObject);
  
@@ -228,24 +190,21 @@
     } fail:^(NSURLSessionDataTask *task, NSError *error) {
         [self sendAlertAction:error.localizedDescription];
     }];
-    
     /** 显示大头针 */
     [self showPOIAnnotations];
 }
 
+/** 创建大头针 */
 - (void)showPOIAnnotations
 {
-    
+    /** 获取数据 */
     NSUserDefaults *map = [NSUserDefaults standardUserDefaults];
     NSDictionary *mapArray = [map objectForKey:@"UDmap"];
-    
     NSData *jsdata = [NSJSONSerialization dataWithJSONObject:mapArray[@"data"] options:NSJSONWritingPrettyPrinted error:nil];
-    
+    /** 提取数据 */
     if (jsdata) {
         NSArray *dicArray = [NSJSONSerialization JSONObjectWithData:jsdata options:NSJSONReadingAllowFragments error:nil];
-        
-        NSLog(@"dicArray === %@",dicArray);
-        
+
         for (NSDictionary * dic in dicArray ) {
             //位置
             CLLocationCoordinate2D coordinate;
@@ -265,7 +224,6 @@
             
         }
     }
-    
 }
 
 #pragma mark -- MapKit代理方法

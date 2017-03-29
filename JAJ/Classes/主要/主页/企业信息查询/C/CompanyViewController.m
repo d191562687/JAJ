@@ -119,7 +119,7 @@
 
 - (void)loacWithName:(NSString *)name Page:(NSString *)page{
     NSString *url = [NSString stringWithFormat:@"%@%@",ip_port,appCjcx_URL];
-  //  请求参数：json={code:"深圳市东方药业有限公司",currentPage:"1",pageSize:"10"}
+//    请求参数：json={code:"",currentPage:"",pageSize:""}
     NSDictionary *params = @{@"code" :name,
                              @"currentPage" :page,
                              @"pageSize" :@500};
@@ -177,7 +177,7 @@
     NormalTableViewCell * cell = [NormalTableViewCell sharedNormalTableViewCell:tableView];
     /** 获取数据 */
     CompayModel * model = self.dataSource[indexPath.section];
-    cell.textLabel.text = model.QYMC;
+    cell.textLabel.text = model.qymc;
     
     return cell;
 }

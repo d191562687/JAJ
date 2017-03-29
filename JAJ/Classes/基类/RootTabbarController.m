@@ -42,7 +42,7 @@
     [self addChildVC:vc2 Title:@"企业信息" image:@"btn_yingyong" selectedImage:@"btn_yingyong_dj" Tag:1];
     
     // 附近
-    MapViewController *vc3 = [MapViewController new];
+    NearbyViewController *vc3 = [NearbyViewController new];
     [self addChildVC:vc3 Title:@"附近" image:@"btn_yingyong" selectedImage:@"btn_yingyong_dj" Tag:1];
     // 食药查询
     TipsViewController *vc4 = [TipsViewController new];

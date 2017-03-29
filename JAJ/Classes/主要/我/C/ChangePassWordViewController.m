@@ -85,10 +85,6 @@
     } fail:^(NSURLSessionDataTask *task, NSError *error) {
         [self sendAlertAction:error.localizedDescription];
     }];
-    
-    
-    
-    
 }
 
 

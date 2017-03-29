@@ -24,7 +24,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self setRootViewController];
- //   [self setupThirdSDK];
+ // [self setupThirdSDK];
     
     return YES;
 }
@@ -47,7 +47,6 @@
 {
     // 高德地图
     [self configureAPIKey];
-    
     
 }
 /** 高德地图 */
