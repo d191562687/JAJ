@@ -18,12 +18,6 @@
 #import "Purchase PurchaseViewController.h"
 #import "TipsViewController.h"
 
-#import "UserInfoManager.h"
-#import "LoginViewController.h"
-#import "RootNavgationController.h"
-#import "UserInfoViewController.h"
-#import "AccountTool.h"
-
 @interface CloudViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong,nonatomic) UITableView *tableView;
@@ -80,29 +74,11 @@
              .navigationController pushViewController:cloudKnowVC animated:YES];
             
         }else if (indexPath.row == 1){
-
-            Account *account = [AccountTool account];
-            if (!account) {
-                // 没有登录，去登录界面
-                LoginViewController *loginVC = [LoginViewController new];
-                loginVC.ReloadTableView = ^(){
-                    [self.tableView reloadData];
-                };
-                RootNavgationController *nav = [[RootNavgationController alloc]initWithRootViewController:loginVC];
-                CATransition *animation = [CATransition animation];
-                animation.duration = 0.5;
-                animation.timingFunction = UIViewAnimationCurveEaseInOut;
-                animation.type = @"cube";
-                animation.subtype = kCATransitionFromTop;
-                [self.view.window.layer addAnimation:animation forKey:nil];
-                [self presentViewController:nav animated:NO completion:nil];
-            }else{
-                // 已经登录，去签到界面
-                SignViewController * signVC = [[SignViewController alloc]init];
-                [self
-                 .navigationController pushViewController:signVC animated:YES];
-            }
-       
+            
+            SignViewController * signVC = [[SignViewController alloc]init];
+            [self
+             .navigationController pushViewController:signVC animated:YES];
+            
         }else if (indexPath.row == 2){
             
             MarketquotationViewController * marketVC = [[MarketquotationViewController alloc]init];
