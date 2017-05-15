@@ -38,9 +38,11 @@
 
 @implementation HomeViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"主页";
+    self.title = @"食药";
     [self setupSubviews];
     
 }
@@ -107,11 +109,16 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView *headV = [[UIView alloc]initWithFrame:CGRectZero];
-    headV.backgroundColor = [UIColor lightGrayColor];
+    headV.backgroundColor = [UIColor whiteColor];
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(15, 0, self.view.width - 30, 30)];
-    label.text = @"行业动态";
+    label.text = @"市场行情";
     label.font =  [UIFont systemFontOfSize:14];
     [headV addSubview:label];
+    
+    UILabel *label1 = [[UILabel alloc]initWithFrame:CGRectMake(self.view.width - 70, 0, self.view.width - 30, 30)];
+    label1.text = @"查看更多";
+    label1.font =  [UIFont systemFontOfSize:14];
+    [headV addSubview:label1];
     
     return headV;
 }
@@ -187,7 +194,7 @@
                 [weakSelf.navigationController pushViewController:mapV animated:YES];
                 
             }else if(indexPath.row == 2){
-                // 企业查询
+                // 厂家
                 CompanyViewController * companyV = [[CompanyViewController alloc]init];
                 [weakSelf.navigationController pushViewController:companyV animated:YES];
             }else if (indexPath.row == 3){
@@ -206,6 +213,21 @@
         };
     }
     return _headView;
+}
+
+//隐藏首页标题栏
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 @end

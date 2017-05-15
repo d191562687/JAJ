@@ -44,7 +44,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我的";
+    self.title = @"账户";
     [self setupSubviews];
 }
 
@@ -77,7 +77,7 @@
             self.phoneLabel.text = [NSString stringWithFormat:@"Tel:%@",model.PHONE];
         }else{
             self.headImgV.image = [UIImage imageNamed:@"user_place"];
-            self.nameLabel.text = @"未登录";
+            self.nameLabel.text = @"系统管理员";
             self.phoneLabel.text = @"";
         }
         return cell;
@@ -94,10 +94,11 @@
         [cell.imageVme removeFromSuperview];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         [cell setAccessoryType:UITableViewCellAccessoryNone];
-        if ([AccountTool account]) {
-            // 添加按钮
-            [cell addSubview:self.returnButton];
-        }
+//        if ([AccountTool account]) {
+//            // 添加按钮
+//            [cell addSubview:self.returnButton];
+//        }
+        [cell addSubview:self.returnButton];
         return cell;
     }
 }
@@ -200,10 +201,10 @@
 - (UIButton *)returnButton
 {
     if (!_returnButton) {
-        _returnButton = [[UIButton alloc]initWithFrame:CGRectMake(30, 50, SCREEN_WIDTH - 60, 40)];
+        _returnButton = [[UIButton alloc]initWithFrame:CGRectMake(30, 50, SCREEN_WIDTH - 60, 45)];
         _returnButton.layer.masksToBounds = YES;
         _returnButton.layer.cornerRadius = 4;
-        _returnButton.backgroundColor = RGBACOLOR(227, 69, 69, 1);
+        _returnButton.backgroundColor = RGBACOLOR(93, 157, 231, 1);
         [_returnButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_returnButton setTitle:@"退出登录" forState:UIControlStateNormal];
         __weak __block WoViewController *weakSelf = self;
@@ -243,7 +244,7 @@
 - (UILabel *)nameLabel
 {
     if (!_nameLabel) {
-        _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(90, 15, SCREEN_WIDTH - 90, 30)];
+        _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(90, 30, SCREEN_WIDTH - 90, 30)];
         _nameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     }
     return _nameLabel;

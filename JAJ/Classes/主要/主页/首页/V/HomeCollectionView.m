@@ -47,7 +47,7 @@ static CGFloat const margin = 2;
 {
     
     NSArray *titleArr = @[@"四品一械查询",@"地图定位",@"企业查询",@"四品一械追溯",@"云助手",@"集采活动"];
-    NSArray *iconArr = @[@"query_normal",@"map_normal",@"factory_normal",@"query_normal",@"factory_normal",@"tips_normal"];
+    NSArray *iconArr = @[@"query",@"icon_position",@"qiye",@"zhuisu",@"yun",@"caiji"];
     
     NormalCollectionViewCell *cell = [NormalCollectionViewCell sharedNormalCell:collectionView IndexPath:indexPath];
     cell.iconName = iconArr[indexPath.row];

@@ -10,7 +10,6 @@
 
 @interface NearbyViewController ()
 
-
 @end
 
 @implementation NearbyViewController
@@ -54,7 +53,6 @@
         NSArray * data = [responseObject objectForKey:@"data"];
         NSLog(@"data ==  %@",data);
         
-        
 //        NSString *code = [[responseObject objectForKey:@"code"] description];
 //        NSString *desc = [[responseObject objectForKey:@"desc"] description];
 //        if ([code isEqualToString:@"0000"]) {
@@ -69,9 +67,6 @@
 
         [self sendAlertAction:error.localizedDescription];
     }];
-    
 }
-
-
 
 @end

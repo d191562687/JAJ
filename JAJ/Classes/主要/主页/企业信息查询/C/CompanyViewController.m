@@ -38,7 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"企业查询";
+    self.title = @"厂家";
     currentPage = 1;
     [self setupSubview];
    

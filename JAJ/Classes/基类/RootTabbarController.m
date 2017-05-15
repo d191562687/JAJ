@@ -35,22 +35,22 @@
     self.selectedIndex = 0;
     // 首页
     HomeViewController *vc1 = [HomeViewController new];
-    [self addChildVC:vc1 Title:@"首页" image:@"btn_yingyong" selectedImage:@"btn_yingyong_dj" Tag:1];
+    [self addChildVC:vc1 Title:@"食药" image:@"xintiao" selectedImage:@"xintiaoX" Tag:1];
     
     // 企业信息
     CompanyViewController *vc2 = [CompanyViewController new];
-    [self addChildVC:vc2 Title:@"企业信息" image:@"btn_yingyong" selectedImage:@"btn_yingyong_dj" Tag:1];
+    [self addChildVC:vc2 Title:@"厂家" image:@"changjia" selectedImage:@"changjiaX" Tag:1];
     
     // 附近
     NearbyViewController *vc3 = [NearbyViewController new];
-    [self addChildVC:vc3 Title:@"附近" image:@"btn_yingyong" selectedImage:@"btn_yingyong_dj" Tag:1];
-    // 食药查询
+    [self addChildVC:vc3 Title:@"附近" image:@"position" selectedImage:@"positionX" Tag:1];
+    // 贴士
     TipsViewController *vc4 = [TipsViewController new];
-    [self addChildVC:vc4 Title:@"贴士" image:@"btn_yingyong" selectedImage:@"btn_yingyong_dj" Tag:1];
+    [self addChildVC:vc4 Title:@"贴士" image:@"tips" selectedImage:@"tipsX" Tag:1];
     
     // 我
     WoViewController *vc5 = [WoViewController new];
-    [self addChildVC:vc5 Title:@"我的" image:@"btn_yingyong" selectedImage:@"btn_yingyong_dj" Tag:1];
+    [self addChildVC:vc5 Title:@"账户" image:@"user" selectedImage:@"userX" Tag:1];
 }
 
 #pragma mark - 添加子控制器
@@ -59,7 +59,7 @@
     childVC.title = title;
     childVC.tabBarItem.image = [UIImage imageNamed:image];
     childVC.tabBarItem.tag = tag;
-    
+
     //    childVC.tabBarItem.imag
     childVC.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     

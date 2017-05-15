@@ -46,7 +46,7 @@
     [self.iconV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.mas_centerX);
         make.centerY.equalTo(self.mas_centerY).offset(-6);
-        make.width.and.height.equalTo(@30);
+        make.width.and.height.equalTo(@27);
     }];
     
     self.titleL = [[UILabel alloc]init];
@@ -58,7 +58,7 @@
         make.top.equalTo(self.iconV.mas_bottom);
         make.left.equalTo(self.mas_left);
         make.right.equalTo(self.mas_right);
-        make.height.equalTo(@21);
+        make.height.equalTo(@30);
     }];
 }
 

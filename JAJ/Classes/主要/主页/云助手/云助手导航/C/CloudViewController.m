@@ -41,7 +41,7 @@
 }
 - (void)setupSubviews
 {
-    self.array = @[@[@"云知道",@"签到",@"市场行情",@"商家点评"],@[@"采购记录上报",@"销售记录上报",@"查询食药信息",@"更多"]];
+    self.array = @[@[@"云知道",@"签到"],@[@"市场行情",@"商家点评"],@[@"采购记录上报",@"销售记录上报",@"查询食药信息"]];
     
     [self.view addSubview:self.tableView];
 }
@@ -60,7 +60,7 @@
 {
     CloudTableViewCell * cell = [CloudTableViewCell sharedCloudTableViewCell:tableView];
     /** icon图片 */
-    NSArray * iconArr = @[@[@"icon_cloud_know",@"icon_qiandao",@"icon_hangqing",@"icon_sjdp"],@[@"icon_settings",@"icon_version",@"icon_advice",@"icon_version"]];
+    NSArray * iconArr = @[@[@"icon_cloud_know",@"icon_qiandao"],@[@"icon_hangqing",@"icon_sjdp"],@[@"icon_settings",@"icon_version",@"icon_advice"]];
     cell.imageV.image = [UIImage imageNamed:iconArr[indexPath.section][indexPath.row]];
     cell.label.text = self.array[indexPath.section][indexPath.row];
     return cell;
@@ -165,7 +165,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 6;
+    return 15;
 }
 
 - (UITableView *)tableView
@@ -175,8 +175,8 @@
         _tableView.backgroundColor = self.view.backgroundColor;
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.rowHeight = 46;
-        _tableView.contentInset = UIEdgeInsetsMake(8, 0, 0, 0);
+        _tableView.rowHeight = 52;
+        _tableView.contentInset = UIEdgeInsetsMake(15, 0, 0, 0);
     }
     return  _tableView;
 }
