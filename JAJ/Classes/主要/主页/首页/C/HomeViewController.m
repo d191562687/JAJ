@@ -23,6 +23,7 @@
 #import "CompanyViewController.h"
 #import "MapViewController.h"
 #import "BackViewController.h"
+#import "NearbyViewController.h"
 
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -190,7 +191,7 @@
                 
             } else if(indexPath.row == 1){
                 // 地图定位
-                MapViewController * mapV = [[MapViewController alloc]init];
+                NearbyViewController * mapV = [[NearbyViewController alloc]init];
                 [weakSelf.navigationController pushViewController:mapV animated:YES];
                 
             }else if(indexPath.row == 2){
@@ -216,18 +217,30 @@
 }
 
 //隐藏首页标题栏
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+//    [self.navigationController setNavigationBarHidden:YES animated:NO];
+//}
+//
+//-(void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+//    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
+//    [self.navigationController setNavigationBarHidden:NO animated:NO];
+//}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [self.navigationController.navigationBar setHidden:YES];
 }
 
--(void)viewWillDisappear:(BOOL)animated
+- (void)viewDidDisappear:(BOOL)animated
 {
-    [super viewWillDisappear:animated];
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    [super viewDidDisappear:animated];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
 
 @end

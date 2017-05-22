@@ -154,4 +154,8 @@
     return _searchTableView;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController.navigationBar setHidden:NO];
+}
 @end

@@ -49,6 +49,7 @@
 		3BF32CD21E08D0A40015C0BE /* YLZGTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF32CC71E08D0A40015C0BE /* YLZGTitleLabel.m */; };
 		3BF32CEA1E08FCB20015C0BE /* FourDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF32CE91E08FCB20015C0BE /* FourDetialViewController.m */; };
 		D1BD50CB8F0650C1B3928DF4 /* libPods-JAJTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F275175999E426096B5E6B4C /* libPods-JAJTests.a */; };
+		F14A25251ED27C4200155622 /* JZLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F14A25241ED27C4200155622 /* JZLocationConverter.m */; };
 		F15016021DEE5E2300485537 /* ActSearchDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15016001DEE5E2300485537 /* ActSearchDetialViewController.m */; };
 		F15016031DEE5E2300485537 /* ActSearchDetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15016011DEE5E2300485537 /* ActSearchDetialViewController.xib */; };
 		F177E9611E2726A100E3300B /* ZFBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F177E9581E2726A100E3300B /* ZFBaseSettingViewController.m */; };
@@ -241,6 +242,8 @@
 		B7B85EC5F3224A7FBCD1475F /* Pods-JAJUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAJUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JAJUITests/Pods-JAJUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDF0868F504838E191EE4535 /* Pods-JAJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JAJ/Pods-JAJ.debug.xcconfig"; sourceTree = "<group>"; };
 		D14B5217A7FE547110CF3102 /* Pods-JAJTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAJTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JAJTests/Pods-JAJTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F14A25231ED27C4200155622 /* JZLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZLocationConverter.h; sourceTree = "<group>"; };
+		F14A25241ED27C4200155622 /* JZLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZLocationConverter.m; sourceTree = "<group>"; };
 		F15015FF1DEE5E2300485537 /* ActSearchDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActSearchDetialViewController.h; sourceTree = "<group>"; };
 		F15016001DEE5E2300485537 /* ActSearchDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActSearchDetialViewController.m; sourceTree = "<group>"; };
 		F15016011DEE5E2300485537 /* ActSearchDetialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActSearchDetialViewController.xib; sourceTree = "<group>"; };
@@ -1095,6 +1098,8 @@
 		F1BF5B6B1DEAAC3B006AA3BA /* 附近 */ = {
 			isa = PBXGroup;
 			children = (
+				F14A25231ED27C4200155622 /* JZLocationConverter.h */,
+				F14A25241ED27C4200155622 /* JZLocationConverter.m */,
 				F1BF5B771DEAAD36006AA3BA /* NearbyViewController.h */,
 				F1BF5B781DEAAD36006AA3BA /* NearbyViewController.m */,
 			);
@@ -1835,6 +1840,7 @@
 				F1A33BCC1DED1558007E6F2E /* ActSearchTableViewCell.m in Sources */,
 				F1ED65191DEC0FDF00FFD4C8 /* HangyeListTableCell.m in Sources */,
 				F17B2F2A1DF6BE11005DB3E4 /* TipsViewController.m in Sources */,
+				F14A25251ED27C4200155622 /* JZLocationConverter.m in Sources */,
 				F1AE57231DF641EF007515F3 /* BackViewController.m in Sources */,
 				F177E9621E2726A100E3300B /* ZFSettingGroup.m in Sources */,
 				3BF32CC81E08D0A40015C0BE /* CompanyBasicController.m in Sources */,

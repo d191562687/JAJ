@@ -86,4 +86,9 @@
     }];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController.navigationBar setHidden:NO];
+}
+
 @end
