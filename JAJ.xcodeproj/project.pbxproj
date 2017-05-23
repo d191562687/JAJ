@@ -24,8 +24,6 @@
 		237D22591DF4283000FC1B47 /* Purchase PurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237D22571DF4283000FC1B47 /* Purchase PurchaseViewController.m */; };
 		237D225E1DF4295600FC1B47 /* MarketquotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237D225C1DF4295600FC1B47 /* MarketquotationViewController.m */; };
 		237D225F1DF4295600FC1B47 /* MarketquotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237D225D1DF4295600FC1B47 /* MarketquotationViewController.xib */; };
-		23CB26671DF44A5600BA5889 /* b27_icon_star_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23CB26631DF44A5600BA5889 /* b27_icon_star_gray@2x.png */; };
-		23CB26681DF44A5600BA5889 /* b27_icon_star_yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23CB26641DF44A5600BA5889 /* b27_icon_star_yellow@2x.png */; };
 		23CB26691DF44A5600BA5889 /* CWStarRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CB26661DF44A5600BA5889 /* CWStarRateView.m */; };
 		25D372AD0D103E3C215FEAB0 /* libPods-JAJUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F915459A7418250252F0A2 /* libPods-JAJUITests.a */; };
 		3B213F4D1DFEA0800088728C /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B213F4C1DFEA0800088728C /* RegisterViewController.m */; };
@@ -64,6 +62,8 @@
 		F199C4751E2475DF00DF1C62 /* FourDetialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F199C4741E2475DF00DF1C62 /* FourDetialModel.m */; };
 		F199C4791E247ACB00DF1C62 /* FourBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F199C4771E247ACB00DF1C62 /* FourBasicViewController.m */; };
 		F199C47A1E247ACB00DF1C62 /* FourBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F199C4781E247ACB00DF1C62 /* FourBasicViewController.xib */; };
+		F19D0EC71ED3C83B00F0D6C6 /* b27_icon_star_yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19D0EC51ED3C83B00F0D6C6 /* b27_icon_star_yellow@2x.png */; };
+		F19D0EC81ED3C83B00F0D6C6 /* b27_icon_star_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19D0EC61ED3C83B00F0D6C6 /* b27_icon_star_gray@2x.png */; };
 		F1A32CAD1DEFF5B700EEE274 /* ActIssueSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A32CAB1DEFF5B700EEE274 /* ActIssueSearchViewController.m */; };
 		F1A32CAE1DEFF5B700EEE274 /* ActIssueSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A32CAC1DEFF5B700EEE274 /* ActIssueSearchViewController.xib */; };
 		F1A33BC81DED0F74007E6F2E /* ActSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A33BC71DED0F74007E6F2E /* ActSearchViewModel.m */; };
@@ -190,8 +190,6 @@
 		237D225B1DF4295600FC1B47 /* MarketquotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketquotationViewController.h; sourceTree = "<group>"; };
 		237D225C1DF4295600FC1B47 /* MarketquotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketquotationViewController.m; sourceTree = "<group>"; };
 		237D225D1DF4295600FC1B47 /* MarketquotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketquotationViewController.xib; sourceTree = "<group>"; };
-		23CB26631DF44A5600BA5889 /* b27_icon_star_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_gray@2x.png"; sourceTree = "<group>"; };
-		23CB26641DF44A5600BA5889 /* b27_icon_star_yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_yellow@2x.png"; sourceTree = "<group>"; };
 		23CB26651DF44A5600BA5889 /* CWStarRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWStarRateView.h; sourceTree = "<group>"; };
 		23CB26661DF44A5600BA5889 /* CWStarRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWStarRateView.m; sourceTree = "<group>"; };
 		2DF142669F15415E2EF3EA35 /* libPods-JAJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JAJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +267,8 @@
 		F199C4761E247ACB00DF1C62 /* FourBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourBasicViewController.h; sourceTree = "<group>"; };
 		F199C4771E247ACB00DF1C62 /* FourBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourBasicViewController.m; sourceTree = "<group>"; };
 		F199C4781E247ACB00DF1C62 /* FourBasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourBasicViewController.xib; sourceTree = "<group>"; };
+		F19D0EC51ED3C83B00F0D6C6 /* b27_icon_star_yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_yellow@2x.png"; sourceTree = "<group>"; };
+		F19D0EC61ED3C83B00F0D6C6 /* b27_icon_star_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_gray@2x.png"; sourceTree = "<group>"; };
 		F1A32CAA1DEFF5B700EEE274 /* ActIssueSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActIssueSearchViewController.h; sourceTree = "<group>"; };
 		F1A32CAB1DEFF5B700EEE274 /* ActIssueSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActIssueSearchViewController.m; sourceTree = "<group>"; };
 		F1A32CAC1DEFF5B700EEE274 /* ActIssueSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActIssueSearchViewController.xib; sourceTree = "<group>"; };
@@ -651,8 +651,8 @@
 		237D22251DF4269800FC1B47 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				23CB26631DF44A5600BA5889 /* b27_icon_star_gray@2x.png */,
-				23CB26641DF44A5600BA5889 /* b27_icon_star_yellow@2x.png */,
+				F19D0EC51ED3C83B00F0D6C6 /* b27_icon_star_yellow@2x.png */,
+				F19D0EC61ED3C83B00F0D6C6 /* b27_icon_star_gray@2x.png */,
 				23CB26651DF44A5600BA5889 /* CWStarRateView.h */,
 				23CB26661DF44A5600BA5889 /* CWStarRateView.m */,
 			);
@@ -1614,11 +1614,12 @@
 				F1DA22881DF00B8C00743904 /* ActIssueSearchTableViewCell.xib in Resources */,
 				F1D18FBC1E07B3360032A028 /* ChangePassWordViewController.xib in Resources */,
 				F1AE57241DF641EF007515F3 /* BackViewController.xib in Resources */,
+				F19D0EC81ED3C83B00F0D6C6 /* b27_icon_star_gray@2x.png in Resources */,
 				237D22461DF427B800FC1B47 /* CommentViewController.xib in Resources */,
 				F17B2F2B1DF6BE11005DB3E4 /* TipsViewController.xib in Resources */,
+				F19D0EC71ED3C83B00F0D6C6 /* b27_icon_star_yellow@2x.png in Resources */,
 				237D22371DF4272500FC1B47 /* CloudKnowViewController.xib in Resources */,
 				F1BF5B131DEA9283006AA3BA /* LaunchScreen.storyboard in Resources */,
-				23CB26671DF44A5600BA5889 /* b27_icon_star_gray@2x.png in Resources */,
 				F1A32CAE1DEFF5B700EEE274 /* ActIssueSearchViewController.xib in Resources */,
 				237D22501DF427EC00FC1B47 /* MoreViewController.xib in Resources */,
 				F199C47A1E247ACB00DF1C62 /* FourBasicViewController.xib in Resources */,
@@ -1626,7 +1627,6 @@
 				F1AD12A01E08C1F300BE0DC0 /* UserInfoViewController.xib in Resources */,
 				F1FC3ABF1DF53EAD004B413C /* FoueTableViewCell.xib in Resources */,
 				237D224B1DF427D600FC1B47 /* SignViewController.xib in Resources */,
-				23CB26681DF44A5600BA5889 /* b27_icon_star_yellow@2x.png in Resources */,
 				237D225F1DF4295600FC1B47 /* MarketquotationViewController.xib in Resources */,
 				F1B555E31DF909D900EDB764 /* FoodTableViewCell.xib in Resources */,
 				F18FF7A01DF11EF800D64248 /* ActIssueDetialViewController.xib in Resources */,

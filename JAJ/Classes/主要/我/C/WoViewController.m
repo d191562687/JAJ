@@ -50,7 +50,7 @@
 
 - (void)setupSubviews
 {
-    self.array = @[@[@"我的"],@[@"修改密码",@"分享金安健",@"意见反馈",@"关于我们",@"设置"],@[@"退出当前账号"]];
+    self.array = @[@[@"我的"],@[@"修改密码",@"分享金安健",@"关于我们",@"意见反馈",@"设置"],@[@"安全退出"]];
     [self.view addSubview:self.tableView];
     
 }
@@ -84,7 +84,7 @@
     }else if(indexPath.section == 1){
         NormalTableViewCell *cell = [NormalTableViewCell sharedNormalTableViewCell:tableView];
         /** 添加icon图 */
-        NSArray *iconArr = @[@[@"icon_cloud_know"],@[@"icon_updatepassword",@"ic_share",@"icon_advice",@"icon_version",@"icon_settings"]];
+        NSArray *iconArr = @[@[@"icon_cloud_know"],@[@"icon_updatepassword",@"icon_advice",@"ic_share",@"icon_version",@"icon_settings"]];
         cell.imageVme.image = [UIImage imageNamed:iconArr[indexPath.section][indexPath.row]];
         cell.label.text = self.array[indexPath.section][indexPath.row];
         return cell;
@@ -143,15 +143,16 @@
             
         }else if (indexPath.row == 2){
             
-            //意见反馈
-            FeedBackViewController *feedbackVC = [FeedBackViewController new];
-            [self.navigationController pushViewController:feedbackVC animated:YES];
-            
-        }else if (indexPath.row == 3){
-            
             //关于
             AboutViewController *aboutVC = [AboutViewController new];
             [self.navigationController pushViewController:aboutVC animated:YES];
+            
+        }else if (indexPath.row == 3){
+            
+            //意见反馈
+            FeedBackViewController *feedbackVC = [FeedBackViewController new];
+            [self.navigationController pushViewController:feedbackVC animated:YES];
+
             
         }else if (indexPath.row == 4){
            
@@ -206,7 +207,7 @@
         _returnButton.layer.cornerRadius = 4;
         _returnButton.backgroundColor = RGBACOLOR(93, 157, 231, 1);
         [_returnButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_returnButton setTitle:@"退出登录" forState:UIControlStateNormal];
+        [_returnButton setTitle:@"安全退出" forState:UIControlStateNormal];
         __weak __block WoViewController *weakSelf = self;
         [_returnButton addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
             LCActionSheet *sheet = [LCActionSheet sheetWithTitle:@"确定退出，换号登录？" cancelButtonTitle:@"取消" clicked:^(LCActionSheet *actionSheet, NSInteger buttonIndex) {
